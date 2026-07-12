@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Book a Session | Susana Stethers Photography</title>
+<meta name="description" content="Book a family, newborn, maternity or couples session in Roswell, Georgia. Tell Susana about your family and she'll be in touch within 1–2 business days.">
+<link rel="canonical" href="https://susanastethersphotography.com/contact.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact | Susana Stethers Photography">
+<meta property="og:description" content="Let's tell your story. Book a session in Roswell, Georgia.">
+<meta property="og:url" content="https://susanastethersphotography.com/contact.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a href="/" class="brand">
+    <div class="brand__name">Susana Stethers</div>
+    <div class="brand__sub">Photography</div>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/experience.html">The Experience</a>
+    <a href="/investment.html">Investment</a>
+    <a href="/contact.html" aria-current="page">Contact</a>
+  </nav>
+</header>
+
+<main id="main" class="page">
+  <section class="contact">
+
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h1>Let&rsquo;s tell your story</h1>
+      <p style="font-size:16px; line-height:1.9; color:var(--body); margin:0 0 36px">Tell me a little about your family and the session you have in mind &mdash; I&rsquo;ll be in touch soon to start planning together.</p>
+
+      <div class="contact__media">
+        <picture>
+          <source type="image/webp" srcset="images/contact-500.webp 500w, images/contact-1000.webp 1000w" sizes="(max-width:800px) 90vw, 480px">
+          <img src="images/contact-500.jpg" srcset="images/contact-500.jpg 500w, images/contact-1000.jpg 1000w" sizes="(max-width:800px) 90vw, 480px"
+               width="500" height="333" loading="lazy" alt="Mother holding her newborn daughter close in a sunlit nursery">
+        </picture>
+      </div>
+
+      <p class="contact__meta">
+        Roswell, Georgia &amp; surrounding areas<br>
+        <a href="https://www.instagram.com/susanatakesaphoto/" target="_blank" rel="noopener">@susanatakesaphoto</a>
+      </p>
+    </div>
+
+    <div>
+      <!-- Success state -->
+      <div class="form-success" id="form-success" hidden role="status">
+        <h2>Thank you!</h2>
+        <p>Your message is on its way. I&rsquo;ll get back to you within 1&ndash;2 business days &mdash; I can&rsquo;t wait to hear more about your family.</p>
+        <button class="btn-text" type="button" id="form-reset">Send another message</button>
+      </div>
+
+      <!-- The form -->
+      <form class="form" id="contact-form" novalidate>
+        <div class="form__row">
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="name" id="f-name" placeholder="Your name"
+                   required autocomplete="name" maxlength="100">
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" id="f-email" placeholder="you@email.com"
+                   required autocomplete="email" maxlength="200">
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Session type</span>
+          <select name="session" id="f-session">
+            <option value="">Choose a session&hellip;</option>
+            <option value="Family">Family</option>
+            <option value="Newborn">Newborn</option>
+            <option value="Maternity">Maternity</option>
+            <option value="Couples">Couples</option>
+            <option value="Not sure">Not sure yet</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Message</span>
+          <textarea name="message" id="f-message" rows="6" maxlength="2000"
+                    placeholder="Tell me about your family, timing, and what you&rsquo;re hoping for&hellip;"></textarea>
+        </label>
+
+        <!-- Honeypot: hidden from people, irresistible to spam bots -->
+        <div class="hp" aria-hidden="true">
+          <label>Do not fill this in
+            <input type="text" name="website" id="f-website" tabindex="-1" autocomplete="off">
+          </label>
+        </div>
+
+        <p class="form__error" id="form-error" hidden role="alert"></p>
+
+        <button class="btn" type="submit" id="form-submit">Send message</button>
+      </form>
+    </div>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__name">Susana Stethers Photography</div>
+  <div class="site-footer__loc">Roswell, Georgia</div>
+  <nav aria-label="Footer">
+    <a href="/investment.html">Investment</a>
+    <a href="https://www.instagram.com/susanatakesaphoto/" target="_blank" rel="noopener">Instagram</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <div class="site-footer__legal">&copy; <span data-year>2026</span> Susana Stethers Photography</div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

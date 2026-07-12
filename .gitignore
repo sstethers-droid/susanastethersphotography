@@ -1,0 +1,35 @@
+# --------------------------------------------------------------------------
+# Large local assets — NEVER commit these.
+#
+# _original-photos/ is ~353 MB of full-resolution JPEGs. GitHub warns above
+# 50 MB per file and rejects at 100 MB, and anything committed here would live
+# in git history forever, making every future clone drag the full 353 MB down.
+# The web-ready derivatives in images/ (5.9 MB) are what actually ship.
+# --------------------------------------------------------------------------
+_original-photos/
+
+# The original Claude design-canvas prototype. Kept for reference; not shipped.
+_prototype/
+
+# Old nested working folder — superseded by the files at the repo root.
+Susana's Family Photography/
+
+# --------------------------------------------------------------------------
+# Secrets.
+# The Supabase ANON key in js/config.js is public by design and IS committed —
+# it is protected by Row Level Security. The SERVICE ROLE key bypasses RLS and
+# must never appear anywhere in this repo.
+# --------------------------------------------------------------------------
+.env
+.env.local
+.env*.local
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Tooling
+node_modules/
+.vercel
