@@ -485,6 +485,42 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; margin: 0; }
 }
 .pkg .btn { margin-top: auto; }
 
+.offerings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 58px;
+}
+.offering {
+  padding: clamp(34px, 5vw, 52px);
+  background: var(--c-t2);
+  border: 1px solid var(--c-l1);
+}
+.offering--accent { background: var(--c-t1); }
+.offering h2 { font-size: clamp(24px, 3vw, 30px); margin: 0 0 16px; }
+.offering p:not(.eyebrow) { color: var(--body); line-height: 1.8; margin: 0 0 24px; }
+
+.know-section {
+  display: grid;
+  grid-template-columns: minmax(300px, .9fr) minmax(360px, 1.1fr);
+  background: var(--c-t3);
+}
+.know-section__photo { min-height: 620px; overflow: hidden; }
+.know-section__photo img { width: 100%; height: 100%; object-fit: cover; }
+.know-section__body {
+  max-width: 650px;
+  align-self: center;
+  padding: clamp(54px, 8vw, 100px);
+}
+.know-section__body h2 { font-size: clamp(28px, 4vw, 38px); margin: 0 0 34px; }
+.know-section__closing {
+  font-family: var(--serif);
+  font-size: 21px;
+  line-height: 1.6;
+  color: var(--ink-2);
+  margin: 40px 0 0;
+}
+
 .know { display: flex; flex-direction: column; gap: 16px; list-style: none; margin: 0; padding: 0; }
 .know li {
   display: flex;
@@ -502,6 +538,40 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; margin: 0; }
   flex: none;
   transform: translateY(-3px);
 }
+
+/* ------------------------------------------------------------ Portfolio */
+.portfolio-lede {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 52px 24px 88px;
+  text-align: center;
+}
+.portfolio-lede h1 { font-size: clamp(34px, 5vw, 48px); line-height: 1.2; margin: 0 0 24px; }
+.portfolio-lede > p:not(.eyebrow) { max-width: 650px; margin: 0 auto; color: var(--body); font-size: 17px; line-height: 1.9; }
+.portfolio-jump { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px; margin-top: 38px; }
+.portfolio-jump a { color: var(--c-accent2); font-size: 11px; letter-spacing: .22em; text-transform: uppercase; border-bottom: 1px solid var(--c-l2); padding-bottom: 4px; }
+.gallery-section { padding: clamp(58px, 8vw, 96px) 24px; scroll-margin-top: 20px; }
+.gallery-section--tint { background: var(--c-t1); }
+.gallery-section--warm { background: var(--c-t2); }
+.gallery-section__head { text-align: center; margin-bottom: 44px; }
+.gallery-section__head h2 { font-size: clamp(28px, 4vw, 38px); }
+.gallery-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 310px;
+  gap: 16px;
+  align-items: stretch;
+}
+.gallery-grid picture { display: block; overflow: hidden; }
+.gallery-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+.gallery-grid picture:hover img { transform: scale(1.025); }
+.gallery-grid .gallery-tall { grid-row: span 2; }
+.gallery-grid--feature picture:not(.gallery-tall) { grid-column: span 2; }
+.portfolio-cta { max-width: 700px; margin: 0 auto; padding: clamp(70px, 10vw, 120px) 24px; text-align: center; }
+.portfolio-cta h2 { font-size: clamp(28px, 4vw, 38px); margin: 0 0 18px; }
+.portfolio-cta p:not(.eyebrow) { color: var(--body); margin: 0 0 28px; }
 
 /* ------------------------------------------------------------- Contact */
 .contact {
@@ -626,3 +696,17 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; margin: 0; }
 /* --------------------------------------------------------------- Utils */
 .center { text-align: center; }
 .note   { font-size: 14.5px; line-height: 1.8; color: var(--muted); }
+
+@media (max-width: 800px) {
+  .know-section { grid-template-columns: 1fr; }
+  .know-section__photo { min-height: 430px; max-height: 68vh; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 250px; }
+  .gallery-grid--feature picture:not(.gallery-tall) { grid-column: auto; }
+}
+
+@media (max-width: 520px) {
+  .site-nav { gap: 10px 16px; }
+  .site-nav a { font-size: 10.5px; letter-spacing: .2em; }
+  .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 330px; }
+  .gallery-grid .gallery-tall { grid-row: auto; }
+}
