@@ -58,6 +58,8 @@
   var heroTimer;
   function showHero(index) {
     heroIndex = index;
+    var hero = document.querySelector('.hero');
+    if (hero) hero.setAttribute('data-hero-index', String(index));
     heroSlides.forEach(function (slide, i) { slide.classList.toggle('is-active', i === index); });
     heroDots.forEach(function (dot, i) {
       dot.classList.toggle('is-active', i === index);

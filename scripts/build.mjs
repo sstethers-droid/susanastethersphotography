@@ -160,7 +160,7 @@ for (const file of PAGES) {
   $('link[rel="canonical"]').attr('href', SITE + path);
   $('meta[property="og:url"]').attr('content', SITE + path);
   if (!$('meta[property="og:image"]').length) {
-    $('head').append(`\n<meta property="og:image" content="${SITE}/images/hero-1600.jpg">`);
+    $('head').append(`\n<meta property="og:image" content="${SITE}/images/hero-family-garden-1600.jpg">`);
   }
   if (!$('meta[name="twitter:card"]').length) {
     $('head').append(`\n<meta name="twitter:card" content="summary_large_image">`);
@@ -182,7 +182,7 @@ for (const file of PAGES) {
     name: 'Susana Stethers Photography',
     description: d || '',
     url: SITE + path,
-    image: SITE + '/images/hero-1600.jpg',
+    image: SITE + '/images/hero-family-garden-1600.jpg',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
