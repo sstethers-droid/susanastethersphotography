@@ -12,14 +12,7 @@
    ========================================================================== */
 
 window.SITE_CONFIG = {
-  // Fill these in after creating the Supabase project.
-  // e.g. 'https://abcdefghijk.supabase.co'
-  SUPABASE_URL: '',
-
-  // The "anon" / "publishable" key from Supabase → Project Settings → API Keys
-  SUPABASE_ANON_KEY: '',
-
-  // Fallback while Supabase isn't wired up yet: the form opens the visitor's
-  // email client instead of silently failing.
+  SUPABASE_URL: 'https://tmqekundfuqcoutneruv.supabase.co',
+  SUPABASE_ANON_KEY: 'sb_publishable_JzZDyw274XrMeOskClD5eA_04YSF1At',
   FALLBACK_EMAIL: 'hello@susanastethersphotography.com'
 };
