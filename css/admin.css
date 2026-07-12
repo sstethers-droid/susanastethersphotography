@@ -58,3 +58,116 @@
 .admin-loading { min-height:100vh; display:grid; place-items:center; color:var(--muted); }
 @media(max-width:760px){.admin-app{grid-template-columns:1fr}.admin-sidebar{position:static;height:auto;padding:24px}.admin-sidebar nav{margin-top:25px;grid-template-columns:1fr 1fr}.admin-sidebar__bottom{display:flex;margin-top:22px}.admin-main{padding:28px 18px}.admin-topbar{align-items:start}.admin-topbar>p{display:none}.booking-card{grid-template-columns:1fr}.photo-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.photo-grid{grid-template-columns:1fr}.booking-card__controls{grid-template-columns:1fr}.booking-card textarea{grid-column:auto}.login-actions{display:grid}}
+
+/* ===========================================================================
+   CMS — website text editor
+   =========================================================================== */
+.cms-page {
+  border: 1px solid var(--c-l1, #E2E8EE);
+  background: #fff;
+  margin-bottom: 14px;
+  border-radius: 4px;
+}
+.cms-page__title {
+  cursor: pointer;
+  padding: 16px 20px;
+  font-family: var(--serif, Georgia, serif);
+  font-size: 19px;
+  list-style: none;
+}
+.cms-page__title::-webkit-details-marker { display: none; }
+.cms-page__title::before { content: "▸ "; color: var(--c-accent2, #8399AD); }
+.cms-page[open] .cms-page__title::before { content: "▾ "; }
+.cms-page[open] .cms-page__title { border-bottom: 1px solid var(--c-l1, #E2E8EE); }
+
+.cms-section {
+  margin: 22px 20px 10px;
+  font-family: var(--sans, sans-serif);
+  font-size: 11px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--muted, #8A8074);
+  font-weight: 600;
+}
+
+.cms-field {
+  display: block;
+  padding: 0 20px 16px;
+  position: relative;
+}
+.cms-field__label {
+  display: block;
+  font-size: 12.5px;
+  color: var(--body, #5C554A);
+  margin-bottom: 6px;
+}
+.cms-field input[type="text"],
+.cms-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--c-l3, #D8E0E8);
+  padding: 10px 12px;
+  font-family: var(--sans, sans-serif);
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ink, #37322B);
+  background: #fff;
+  border-radius: 3px;
+  resize: vertical;
+}
+.cms-field input:focus,
+.cms-field textarea:focus {
+  outline: none;
+  border-color: var(--c-accent, #9FB4C7);
+  box-shadow: 0 0 0 3px rgba(159, 180, 199, .18);
+}
+
+.cms-field__count {
+  position: absolute;
+  right: 22px;
+  top: 0;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.cms-field__count.is-good  { color: #4B8060; }
+.cms-field__count.is-short { color: #A08767; }
+.cms-field__count.is-over  { color: #A96F6F; font-weight: 600; }
+
+/* ------------------------------------------------------------- publish bar */
+.save-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: flex-end;
+  padding: 14px 28px;
+  background: #fff;
+  border-top: 1px solid var(--c-l1, #E2E8EE);
+  box-shadow: 0 -6px 22px rgba(90, 105, 125, .12);
+}
+.save-bar[hidden] { display: none; }
+.save-bar #dirty-count {
+  margin-right: auto;
+  font-size: 13.5px;
+  color: var(--muted, #8A8074);
+}
+
+.photo-card__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 130px;
+  background: var(--c-t1, #F0F4F8);
+  color: var(--c-accent2, #8399AD);
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.admin-message.is-success { color: #4B8060; }
+.admin-message.is-error   { color: #A96F6F; }

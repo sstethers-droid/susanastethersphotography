@@ -1,0 +1,12 @@
+{
+  "name": "susana-stethers-photography",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "annotate": "node scripts/annotate.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

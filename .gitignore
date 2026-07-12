@@ -35,3 +35,5 @@ Thumbs.db
 node_modules/
 .vercel
 .env*
+dist/
+node_modules/

@@ -4,52 +4,86 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Admin Portal | Susana Stethers Photography</title>
+<title>Owner Portal | Susana Stethers Photography</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/admin.css">
 </head>
 <body class="admin-body">
+
 <div class="admin-app" id="admin-app" hidden>
+
   <aside class="admin-sidebar">
     <a class="admin-brand" href="/">Susana Stethers <span>Photography</span></a>
     <nav aria-label="Admin sections">
-      <button class="admin-nav is-active" type="button" data-admin-tab="bookings">Bookings <span id="new-count">0</span></button>
+      <button class="admin-nav is-active" type="button" data-admin-tab="content">Website text</button>
       <button class="admin-nav" type="button" data-admin-tab="photos">Website photos</button>
+      <button class="admin-nav" type="button" data-admin-tab="bookings">Bookings <span id="new-count">0</span></button>
     </nav>
     <div class="admin-sidebar__bottom">
-      <a href="/" target="_blank">View website</a>
+      <a href="/" target="_blank" rel="noopener">View website</a>
       <button type="button" id="sign-out">Sign out</button>
     </div>
   </aside>
+
   <main class="admin-main">
     <header class="admin-topbar">
-      <div><p class="eyebrow">Owner portal</p><h1 id="admin-title">Bookings</h1></div>
+      <div>
+        <p class="eyebrow">Owner portal</p>
+        <h1 id="admin-title">Website text</h1>
+      </div>
       <p id="owner-email"></p>
     </header>
 
-    <section id="bookings-panel" class="admin-panel">
-      <div class="admin-panel__intro"><p>Every website inquiry appears here. Update its status, add a session date, and keep private notes.</p><button class="admin-secondary" id="refresh-bookings" type="button">Refresh</button></div>
+    <!-- ============================================================== TEXT -->
+    <section id="content-panel" class="admin-panel">
+      <div class="admin-panel__intro">
+        <p>Edit any words on your website. Changes go live about a minute after you publish.</p>
+      </div>
+      <p class="admin-message" id="content-message" hidden></p>
+      <div id="content-groups"></div>
+    </section>
+
+    <!-- ============================================================ PHOTOS -->
+    <section id="photos-panel" class="admin-panel" hidden>
+      <div class="admin-panel__intro">
+        <p>Replace any photo on the website. Describing each photo helps Google understand it and helps visitors using a screen reader.</p>
+      </div>
+      <p class="admin-message" id="photos-message" hidden></p>
+      <div class="photo-groups" id="photo-groups"></div>
+    </section>
+
+    <!-- ========================================================== BOOKINGS -->
+    <section id="bookings-panel" class="admin-panel" hidden>
+      <div class="admin-panel__intro">
+        <p>Every website inquiry appears here. Update its status, add a session date, and keep private notes.</p>
+        <button class="admin-secondary" id="refresh-bookings" type="button">Refresh</button>
+      </div>
       <div class="booking-filters" role="group" aria-label="Filter bookings">
         <button class="is-active" type="button" data-status-filter="all">All</button>
         <button type="button" data-status-filter="new">New</button>
+        <button type="button" data-status-filter="contacted">Contacted</button>
         <button type="button" data-status-filter="booked">Booked</button>
         <button type="button" data-status-filter="completed">Completed</button>
       </div>
-      <p class="admin-message" id="bookings-message">Loading bookings…</p>
+      <p class="admin-message" id="bookings-message">Loading…</p>
       <div class="booking-list" id="booking-list"></div>
     </section>
-
-    <section id="photos-panel" class="admin-panel" hidden>
-      <div class="admin-panel__intro"><p>Choose any website position and upload a replacement. Your current local photograph stays as the fallback.</p></div>
-      <p class="admin-message" id="photos-message">Loading photo positions…</p>
-      <div class="photo-groups" id="photo-groups"></div>
-    </section>
   </main>
+
+  <!-- Sticky publish bar — only appears when there is something to save -->
+  <div class="save-bar" id="save-bar" hidden>
+    <span id="dirty-count">0 unsaved changes</span>
+    <p class="admin-message" id="save-message" hidden></p>
+    <button class="btn" type="button" id="save-publish">Save &amp; publish</button>
+  </div>
+
 </div>
+
 <div class="admin-loading" id="admin-loading">Opening your private portal…</div>
+
 <script src="js/config.js"></script>
 <script src="js/supabase-2.57.4.js"></script>
 <script src="js/admin.js"></script>
