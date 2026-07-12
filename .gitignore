@@ -33,3 +33,4 @@ Thumbs.db
 # Tooling
 node_modules/
 .vercel
+.env*
