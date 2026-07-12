@@ -1,0 +1,4 @@
+images/Website/
+.git/
+.DS_Store
+.env.local
