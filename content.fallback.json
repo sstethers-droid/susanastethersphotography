@@ -18,7 +18,7 @@
     },
     "home.page.capture-the-moments-you-ll-never-want-to": {
       "value": "Capture the moments you’ll never want to forget",
-      "label": "Capture the moments you’ll never want to forget",
+      "label": "Main heading",
       "page": "home",
       "section": "Page",
       "kind": "text",
@@ -26,7 +26,7 @@
     },
     "home.hi-i-m-susana.hi-i-m-susana": {
       "value": "Hi, I’m Susana",
-      "label": "Hi, I’m Susana",
+      "label": "Section heading",
       "page": "home",
       "section": "Hi, I’m Susana",
       "kind": "text",
@@ -34,7 +34,7 @@
     },
     "home.honest-moments-artfully-preserved.honest-moments-artfully-preserved": {
       "value": "Honest moments, artfully preserved",
-      "label": "Honest moments, artfully preserved",
+      "label": "Section heading",
       "page": "home",
       "section": "Honest moments, artfully preserved",
       "kind": "text",
@@ -42,15 +42,15 @@
     },
     "home.what-i-photograph.what-i-photograph": {
       "value": "What I Photograph",
-      "label": "What I Photograph",
+      "label": "Section heading",
       "page": "home",
       "section": "What I Photograph",
       "kind": "text",
       "sort": 5
     },
     "home.calm-comfortable-stress-free.calm-comfortable-stress-free": {
-      "value": "Calm, comfortable &amp; stress-free",
-      "label": "Calm, comfortable & stress-free",
+      "value": "Calm, comfortable & stress-free",
+      "label": "Section heading",
       "page": "home",
       "section": "Calm, comfortable & stress-free",
       "kind": "text",
@@ -58,7 +58,7 @@
     },
     "home.from-past-clients.from-past-clients": {
       "value": "From past clients",
-      "label": "From past clients",
+      "label": "Section heading",
       "page": "home",
       "section": "From past clients",
       "kind": "text",
@@ -66,7 +66,7 @@
     },
     "home.susanatakesaphoto.susanatakesaphoto": {
       "value": "<a href=\"https://www.instagram.com/susanatakesaphoto/\" target=\"_blank\" rel=\"noopener\">@susanatakesaphoto</a>",
-      "label": "@susanatakesaphoto",
+      "label": "Section heading",
       "page": "home",
       "section": "@susanatakesaphoto",
       "kind": "text",
@@ -74,7 +74,7 @@
     },
     "home.page.newborn": {
       "value": "Newborn",
-      "label": "Newborn",
+      "label": "Sub-heading",
       "page": "home",
       "section": "Page",
       "kind": "text",
@@ -82,7 +82,7 @@
     },
     "home.page.family": {
       "value": "Family",
-      "label": "Family",
+      "label": "Sub-heading 2",
       "page": "home",
       "section": "Page",
       "kind": "text",
@@ -90,7 +90,7 @@
     },
     "home.page.maternity": {
       "value": "Maternity",
-      "label": "Maternity",
+      "label": "Sub-heading 3",
       "page": "home",
       "section": "Page",
       "kind": "text",
@@ -98,7 +98,7 @@
     },
     "home.page.couples": {
       "value": "Couples",
-      "label": "Couples",
+      "label": "Sub-heading 4",
       "page": "home",
       "section": "Page",
       "kind": "text",
@@ -106,7 +106,7 @@
     },
     "home.page.roswell-georgia": {
       "value": "Roswell, Georgia",
-      "label": "Roswell, Georgia",
+      "label": "Small label above the heading",
       "page": "home",
       "section": "Page",
       "kind": "text",
@@ -114,7 +114,7 @@
     },
     "home.honest-moments-artfully-preserved.a-glimpse-into-the-stories": {
       "value": "A glimpse into the stories",
-      "label": "A glimpse into the stories",
+      "label": "Small label above the heading",
       "page": "home",
       "section": "Honest moments, artfully preserved",
       "kind": "text",
@@ -122,7 +122,7 @@
     },
     "home.what-i-photograph.sessions": {
       "value": "Sessions",
-      "label": "Sessions",
+      "label": "Small label above the heading",
       "page": "home",
       "section": "What I Photograph",
       "kind": "text",
@@ -130,7 +130,7 @@
     },
     "home.from-past-clients.kind-words": {
       "value": "Kind Words",
-      "label": "Kind Words",
+      "label": "Small label above the heading",
       "page": "home",
       "section": "From past clients",
       "kind": "text",
@@ -138,127 +138,127 @@
     },
     "home.susanatakesaphoto.follow-along": {
       "value": "Follow along",
-      "label": "Follow along",
+      "label": "Small label above the heading",
       "page": "home",
       "section": "@susanatakesaphoto",
       "kind": "text",
       "sort": 17
     },
-    "home.calm-comfortable-stress-free.from-planning-your-session-to-delivering": {
-      "value": "From planning your session to delivering your final gallery, I’ll guide you every step of the way. Sessions are designed to be calm, comfortable, and stress-free — especially for young families and first-time parents.",
-      "label": "From planning your session to delivering your final galle…",
-      "page": "home",
-      "section": "Calm, comfortable & stress-free",
-      "kind": "textarea",
-      "sort": 18
-    },
-    "home.calm-comfortable-stress-free.with-gentle-direction-and-a-focus-on-nat": {
-      "value": "With gentle direction and a focus on natural moments, you can relax and enjoy time together while I document the connection, emotion, and details you’ll want to remember for years to come.",
-      "label": "With gentle direction and a focus on natural moments, you…",
-      "page": "home",
-      "section": "Calm, comfortable & stress-free",
-      "kind": "textarea",
-      "sort": 19
-    },
-    "home.hi-i-m-susana.i-m-a-roswell-ga-photographer-specializi": {
-      "value": "I’m a Roswell, GA photographer specializing in family, newborn, maternity, milestone, and couples photography. My approach is relaxed and natural, focusing on genuine connection and creating light, airy images that feel timeless and true to your family.",
-      "label": "I’m a Roswell, GA photographer specializing in family, ne…",
-      "page": "home",
-      "section": "Hi, I’m Susana",
-      "kind": "textarea",
-      "sort": 20
-    },
-    "home.hi-i-m-susana.whether-you-re-welcoming-a-new-baby-cele": {
-      "value": "Whether you’re welcoming a new baby, celebrating a milestone, or simply wanting to remember this season as it is, I’m here to document your story in a way that feels effortless and meaningful.",
-      "label": "Whether you’re welcoming a new baby, celebrating a milest…",
-      "page": "home",
-      "section": "Hi, I’m Susana",
-      "kind": "textarea",
-      "sort": 21
-    },
     "home.page.baby-led-in-home-or-outdoor": {
       "value": "Baby-led, in-home or outdoor",
-      "label": "Baby-led, in-home or outdoor",
+      "label": "Caption under the photo",
       "page": "home",
       "section": "Page",
       "kind": "text",
-      "sort": 22
+      "sort": 18
     },
     "home.page.relaxed-and-playful": {
       "value": "Relaxed and playful",
-      "label": "Relaxed and playful",
+      "label": "Caption under the photo 2",
       "page": "home",
       "section": "Page",
       "kind": "text",
-      "sort": 23
+      "sort": 19
     },
     "home.page.celebrating-the-season-ahead": {
       "value": "Celebrating the season ahead",
-      "label": "Celebrating the season ahead",
+      "label": "Caption under the photo 3",
       "page": "home",
       "section": "Page",
       "kind": "text",
-      "sort": 24
+      "sort": 20
     },
     "home.page.connection-simply": {
       "value": "Connection, simply",
-      "label": "Connection, simply",
+      "label": "Caption under the photo 4",
       "page": "home",
       "section": "Page",
       "kind": "text",
-      "sort": 25
+      "sort": 21
     },
     "home.from-past-clients.susana-made-our-whole-session-feel-like-": {
       "value": "Susana made our whole session feel like play. Our toddler warmed up in minutes, and the photos are the most “us” we’ve ever looked.",
-      "label": "Susana made our whole session feel like play. Our toddler…",
+      "label": "Testimonial quote",
       "page": "home",
       "section": "From past clients",
       "kind": "textarea",
-      "sort": 26
+      "sort": 22
     },
     "home.from-past-clients.she-came-to-our-home-for-our-newborn-ses": {
       "value": "She came to our home for our newborn session and there was zero pressure — plenty of time for feeding and cuddles. The gallery made me cry.",
-      "label": "She came to our home for our newborn session and there wa…",
+      "label": "Testimonial quote 2",
       "page": "home",
       "section": "From past clients",
       "kind": "textarea",
-      "sort": 27
+      "sort": 23
     },
     "home.from-past-clients.gentle-direction-beautiful-light-and-a-g": {
       "value": "Gentle direction, beautiful light, and a gallery two weeks later. The easiest photo experience we’ve ever had.",
-      "label": "Gentle direction, beautiful light, and a gallery two week…",
+      "label": "Testimonial quote 3",
       "page": "home",
       "section": "From past clients",
       "kind": "textarea",
-      "sort": 28
+      "sort": 24
     },
     "home.from-past-clients.the-miller-family": {
       "value": "The Miller Family",
-      "label": "The Miller Family",
+      "label": "Testimonial — who said it",
       "page": "home",
       "section": "From past clients",
       "kind": "text",
-      "sort": 29
+      "sort": 25
     },
     "home.from-past-clients.emily-r": {
       "value": "Emily R.",
-      "label": "Emily R.",
+      "label": "Testimonial — who said it 2",
       "page": "home",
       "section": "From past clients",
       "kind": "text",
-      "sort": 30
+      "sort": 26
     },
     "home.from-past-clients.the-okafor-family": {
       "value": "The Okafor Family",
-      "label": "The Okafor Family",
+      "label": "Testimonial — who said it 3",
       "page": "home",
       "section": "From past clients",
       "kind": "text",
+      "sort": 27
+    },
+    "home.calm-comfortable-stress-free.from-planning-your-session-to-delivering": {
+      "value": "From planning your session to delivering your final gallery, I’ll guide you every step of the way. Sessions are designed to be calm, comfortable, and stress-free — especially for young families and first-time parents.",
+      "label": "Paragraph",
+      "page": "home",
+      "section": "Calm, comfortable & stress-free",
+      "kind": "textarea",
+      "sort": 28
+    },
+    "home.calm-comfortable-stress-free.with-gentle-direction-and-a-focus-on-nat": {
+      "value": "With gentle direction and a focus on natural moments, you can relax and enjoy time together while I document the connection, emotion, and details you’ll want to remember for years to come.",
+      "label": "Paragraph 2",
+      "page": "home",
+      "section": "Calm, comfortable & stress-free",
+      "kind": "textarea",
+      "sort": 29
+    },
+    "home.hi-i-m-susana.i-m-a-roswell-ga-photographer-specializi": {
+      "value": "I’m a Roswell, GA photographer specializing in family, newborn, maternity, milestone, and couples photography. My approach is relaxed and natural, focusing on genuine connection and creating light, airy images that feel timeless and true to your family.",
+      "label": "Paragraph",
+      "page": "home",
+      "section": "Hi, I’m Susana",
+      "kind": "textarea",
+      "sort": 30
+    },
+    "home.hi-i-m-susana.whether-you-re-welcoming-a-new-baby-cele": {
+      "value": "Whether you’re welcoming a new baby, celebrating a milestone, or simply wanting to remember this season as it is, I’m here to document your story in a way that feels effortless and meaningful.",
+      "label": "Paragraph 2",
+      "page": "home",
+      "section": "Hi, I’m Susana",
+      "kind": "textarea",
       "sort": 31
     },
     "home.page.book-a-session": {
       "value": "Book a session",
-      "label": "Book a session",
+      "label": "Button text",
       "page": "home",
       "section": "Page",
       "kind": "text",
@@ -266,7 +266,7 @@
     },
     "home.hi-i-m-susana.more-about-me": {
       "value": "More about me",
-      "label": "More about me",
+      "label": "Link text",
       "page": "home",
       "section": "Hi, I’m Susana",
       "kind": "text",
@@ -274,7 +274,7 @@
     },
     "home.honest-moments-artfully-preserved.explore-the-portfolio": {
       "value": "Explore the portfolio",
-      "label": "Explore the portfolio",
+      "label": "Link text",
       "page": "home",
       "section": "Honest moments, artfully preserved",
       "kind": "text",
@@ -282,7 +282,7 @@
     },
     "home.calm-comfortable-stress-free.what-to-expect": {
       "value": "What to expect",
-      "label": "What to expect",
+      "label": "Link text",
       "page": "home",
       "section": "Calm, comfortable & stress-free",
       "kind": "text",
@@ -290,7 +290,7 @@
     },
     "home.page.roswell-georgia-2": {
       "value": "Roswell, Georgia",
-      "label": "Roswell, Georgia",
+      "label": "Small print",
       "page": "home",
       "section": "Page",
       "kind": "text",
@@ -314,7 +314,7 @@
     },
     "about.page.hi-i-m-susana-the-photographer-behind-th": {
       "value": "Hi, I’m Susana — the photographer behind the camera.",
-      "label": "Hi, I’m Susana — the photographer behind the camera.",
+      "label": "Main heading",
       "page": "about",
       "section": "Page",
       "kind": "text",
@@ -322,7 +322,7 @@
     },
     "about.page.i-m-a-roswell-ga-family-photographer-spe": {
       "value": "I’m a Roswell, GA family photographer specializing in newborn, family, maternity, milestone, and couples photography. I’m drawn to the beauty in everyday moments — soft light, genuine connection, and the small details that make each season of life meaningful.",
-      "label": "I’m a Roswell, GA family photographer specializing in new…",
+      "label": "Paragraph",
       "page": "about",
       "section": "Page",
       "kind": "textarea",
@@ -330,7 +330,7 @@
     },
     "about.page.as-a-mom-myself-i-understand-how-fleetin": {
       "value": "As a mom myself, I understand how fleeting these moments are and how quickly life changes. That perspective shapes the way I approach every session. My goal is to create a relaxed, comfortable experience where your family can slow down, be present, and simply enjoy time together.",
-      "label": "As a mom myself, I understand how fleeting these moments …",
+      "label": "Paragraph 2",
       "page": "about",
       "section": "Page",
       "kind": "textarea",
@@ -338,7 +338,7 @@
     },
     "about.page.my-sessions-are-kid-friendly-and-guided-": {
       "value": "My sessions are kid-friendly and guided in a natural way, making space for both quiet moments and playful energy. I love working with children of all personalities — from shy little ones who need time to warm up to high-energy kids who want to run, explore, and be themselves. I’ll happily get on the floor, follow their lead, and gently guide you so nothing ever feels awkward or forced.",
-      "label": "My sessions are kid-friendly and guided in a natural way,…",
+      "label": "Paragraph 3",
       "page": "about",
       "section": "Page",
       "kind": "textarea",
@@ -346,7 +346,7 @@
     },
     "about.page.outside-of-photography-i-m-inspired-by-f": {
       "value": "Outside of photography, I’m inspired by flowers, beautiful spaces, travel, and event planning — anything that celebrates creativity and thoughtful details. That love for beauty and intention carries into my work, where I focus on creating light, airy images that feel natural, warm, and timeless.",
-      "label": "Outside of photography, I’m inspired by flowers, beautifu…",
+      "label": "Paragraph 4",
       "page": "about",
       "section": "Page",
       "kind": "textarea",
@@ -354,7 +354,7 @@
     },
     "about.page.my-goal-is-to-preserve-your-family-s-mem": {
       "value": "My goal is to preserve your family’s memories in a way that feels honest and enduring — images you’ll return to years from now and remember exactly how this season of life felt.",
-      "label": "My goal is to preserve your family’s memories in a way th…",
+      "label": "Paragraph 5",
       "page": "about",
       "section": "Page",
       "kind": "textarea",
@@ -362,7 +362,7 @@
     },
     "about.page.get-in-touch": {
       "value": "Get in touch",
-      "label": "Get in touch",
+      "label": "Button text",
       "page": "about",
       "section": "Page",
       "kind": "text",
@@ -370,7 +370,7 @@
     },
     "about.page.roswell-georgia": {
       "value": "Roswell, Georgia",
-      "label": "Roswell, Georgia",
+      "label": "Small print",
       "page": "about",
       "section": "Page",
       "kind": "text",
@@ -393,8 +393,8 @@
       "sort": 48
     },
     "experience.page.easy-comfortable-enjoyable-especially-fo": {
-      "value": "Easy, comfortable &amp; enjoyable — especially for little ones",
-      "label": "Easy, comfortable & enjoyable — especially for little ones",
+      "value": "Easy, comfortable & enjoyable — especially for little ones",
+      "label": "Main heading",
       "page": "experience",
       "section": "Page",
       "kind": "text",
@@ -402,7 +402,7 @@
     },
     "experience.what-to-expect.what-to-expect": {
       "value": "What to Expect",
-      "label": "What to Expect",
+      "label": "Section heading",
       "page": "experience",
       "section": "What to Expect",
       "kind": "text",
@@ -410,7 +410,7 @@
     },
     "experience.frequently-asked-questions.frequently-asked-questions": {
       "value": "Frequently asked questions",
-      "label": "Frequently asked questions",
+      "label": "Section heading",
       "page": "experience",
       "section": "Frequently asked questions",
       "kind": "text",
@@ -418,7 +418,7 @@
     },
     "experience.page.before-your-session": {
       "value": "Before Your Session",
-      "label": "Before Your Session",
+      "label": "Sub-heading",
       "page": "experience",
       "section": "Page",
       "kind": "text",
@@ -426,7 +426,7 @@
     },
     "experience.page.during-your-session": {
       "value": "During Your Session",
-      "label": "During Your Session",
+      "label": "Sub-heading 2",
       "page": "experience",
       "section": "Page",
       "kind": "text",
@@ -434,7 +434,7 @@
     },
     "experience.page.after-your-session": {
       "value": "After Your Session",
-      "label": "After Your Session",
+      "label": "Sub-heading 3",
       "page": "experience",
       "section": "Page",
       "kind": "text",
@@ -442,7 +442,7 @@
     },
     "experience.frequently-asked-questions.what-if-my-kids-won-t-cooperate": {
       "value": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"true\" aria-controls=\"faq-a1\" id=\"faq-q1\">\n            <span>What if my kids won’t cooperate?</span>\n            <span class=\"faq__mark\" aria-hidden=\"true\">−</span>\n          </button>",
-      "label": "What if my kids won’t cooperate? −",
+      "label": "Sub-heading",
       "page": "experience",
       "section": "Frequently asked questions",
       "kind": "text",
@@ -450,7 +450,7 @@
     },
     "experience.frequently-asked-questions.where-do-sessions-take-place": {
       "value": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"false\" aria-controls=\"faq-a2\" id=\"faq-q2\">\n            <span>Where do sessions take place?</span>\n            <span class=\"faq__mark\" aria-hidden=\"true\">+</span>\n          </button>",
-      "label": "Where do sessions take place? +",
+      "label": "Sub-heading 2",
       "page": "experience",
       "section": "Frequently asked questions",
       "kind": "text",
@@ -458,7 +458,7 @@
     },
     "experience.frequently-asked-questions.what-should-we-wear": {
       "value": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"false\" aria-controls=\"faq-a3\" id=\"faq-q3\">\n            <span>What should we wear?</span>\n            <span class=\"faq__mark\" aria-hidden=\"true\">+</span>\n          </button>",
-      "label": "What should we wear? +",
+      "label": "Sub-heading 3",
       "page": "experience",
       "section": "Frequently asked questions",
       "kind": "text",
@@ -466,7 +466,7 @@
     },
     "experience.frequently-asked-questions.when-should-i-book-a-lifestyle-newborn-s": {
       "value": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"false\" aria-controls=\"faq-a4\" id=\"faq-q4\">\n            <span>When should I book a lifestyle newborn session?</span>\n            <span class=\"faq__mark\" aria-hidden=\"true\">+</span>\n          </button>",
-      "label": "When should I book a lifestyle newborn session? +",
+      "label": "Sub-heading 4",
       "page": "experience",
       "section": "Frequently asked questions",
       "kind": "text",
@@ -474,107 +474,107 @@
     },
     "experience.frequently-asked-questions.how-long-until-we-see-our-photos": {
       "value": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"false\" aria-controls=\"faq-a5\" id=\"faq-q5\">\n            <span>How long until we see our photos?</span>\n            <span class=\"faq__mark\" aria-hidden=\"true\">+</span>\n          </button>",
-      "label": "How long until we see our photos? +",
+      "label": "Sub-heading 5",
       "page": "experience",
       "section": "Frequently asked questions",
       "kind": "text",
       "sort": 59
     },
-    "experience.page.my-sessions-are-designed-to-feel-easy-co": {
-      "value": "My sessions are designed to feel easy, comfortable, and enjoyable — especially for little ones. From the very beginning, my goal is to create a relaxed experience where your family feels at ease and free to be yourselves.",
-      "label": "My sessions are designed to feel easy, comfortable, and e…",
-      "page": "experience",
-      "section": "Page",
-      "kind": "textarea",
-      "sort": 63
-    },
-    "experience.page.i-take-the-time-to-connect-with-your-chi": {
-      "value": "I take the time to connect with your children, meet them where they are, and help them feel safe and confident in front of the camera. Whether your child is shy and needs a few minutes to warm up or full of energy and ready to explore, I embrace it all.",
-      "label": "I take the time to connect with your children, meet them …",
-      "page": "experience",
-      "section": "Page",
-      "kind": "textarea",
-      "sort": 64
-    },
-    "experience.page.i-ll-get-on-their-level-follow-their-lea": {
-      "value": "I’ll get on their level, follow their lead, and get silly when needed — while gently guiding you so nothing ever feels awkward or forced. You don’t need perfectly behaved kids or practiced smiles. The most meaningful images come from real connection, and that starts with everyone feeling comfortable.",
-      "label": "I’ll get on their level, follow their lead, and get silly…",
-      "page": "experience",
-      "section": "Page",
-      "kind": "textarea",
-      "sort": 65
-    },
     "experience.page.once-you-book-i-ll-guide-you-through-sim": {
       "value": "Once you book, I’ll guide you through simple preparation so you feel ready and relaxed. This includes outfit suggestions, location guidance, and help choosing the best timing for your session.",
-      "label": "Once you book, I’ll guide you through simple preparation …",
+      "label": "Paragraph",
       "page": "experience",
       "section": "Page",
       "kind": "textarea",
-      "sort": 66
+      "sort": 60
     },
     "experience.page.sessions-are-calm-playful-and-natural-i-": {
       "value": "Sessions are calm, playful, and natural. I’ll offer gentle direction while allowing space for authentic moments to unfold. You’ll never be left wondering what to do, and there’s no pressure for perfection — just connection.",
-      "label": "Sessions are calm, playful, and natural. I’ll offer gentl…",
+      "label": "Paragraph 2",
       "page": "experience",
       "section": "Page",
       "kind": "textarea",
-      "sort": 67
+      "sort": 61
     },
     "experience.page.you-ll-receive-a-thoughtfully-curated-on": {
       "value": "You’ll receive a thoughtfully curated online gallery filled with images that reflect your family just as they are in this season — honest, warm, and timeless photographs you’ll cherish for years to come.",
-      "label": "You’ll receive a thoughtfully curated online gallery fill…",
+      "label": "Paragraph 3",
+      "page": "experience",
+      "section": "Page",
+      "kind": "textarea",
+      "sort": 62
+    },
+    "experience.frequently-asked-questions.that-s-completely-normal-and-welcome-i-l": {
+      "value": "That’s completely normal — and welcome! I’ll get on their level, follow their lead, and get silly when needed. The most meaningful images come from real connection, not practiced smiles.",
+      "label": "FAQ answer",
+      "page": "experience",
+      "section": "Frequently asked questions",
+      "kind": "textarea",
+      "sort": 63
+    },
+    "experience.frequently-asked-questions.sessions-can-take-place-outdoors-around-": {
+      "value": "Sessions can take place outdoors around Roswell and the surrounding areas, in the comfort of your home, or in a studio. Studio sessions are available for an additional rental fee, and I’ll help you choose the setting that best fits your vision.",
+      "label": "FAQ answer 2",
+      "page": "experience",
+      "section": "Frequently asked questions",
+      "kind": "textarea",
+      "sort": 64
+    },
+    "experience.frequently-asked-questions.after-booking-you-ll-receive-style-guida": {
+      "value": "After booking, you’ll receive style guidance with outfit suggestions that photograph beautifully in soft, natural light. Comfort always comes first, especially for little ones.",
+      "label": "FAQ answer 3",
+      "page": "experience",
+      "section": "Frequently asked questions",
+      "kind": "textarea",
+      "sort": 65
+    },
+    "experience.frequently-asked-questions.reach-out-during-pregnancy-whenever-you-": {
+      "value": "Reach out during pregnancy whenever you feel ready so we can reserve a flexible window around your due date. Lifestyle newborn sessions are often photographed during the first few weeks, but there is no strict age cutoff — we’ll choose timing that feels comfortable for your family.",
+      "label": "FAQ answer 4",
+      "page": "experience",
+      "section": "Frequently asked questions",
+      "kind": "textarea",
+      "sort": 66
+    },
+    "experience.frequently-asked-questions.your-thoughtfully-curated-online-gallery": {
+      "value": "Your thoughtfully curated online gallery is delivered within two weeks of your session.",
+      "label": "FAQ answer 5",
+      "page": "experience",
+      "section": "Frequently asked questions",
+      "kind": "text",
+      "sort": 67
+    },
+    "experience.page.my-sessions-are-designed-to-feel-easy-co": {
+      "value": "My sessions are designed to feel easy, comfortable, and enjoyable — especially for little ones. From the very beginning, my goal is to create a relaxed experience where your family feels at ease and free to be yourselves.",
+      "label": "Paragraph 4",
       "page": "experience",
       "section": "Page",
       "kind": "textarea",
       "sort": 68
     },
-    "experience.frequently-asked-questions.that-s-completely-normal-and-welcome-i-l": {
-      "value": "That’s completely normal — and welcome! I’ll get on their level, follow their lead, and get silly when needed. The most meaningful images come from real connection, not practiced smiles.",
-      "label": "That’s completely normal — and welcome! I’ll get on their…",
+    "experience.page.i-take-the-time-to-connect-with-your-chi": {
+      "value": "I take the time to connect with your children, meet them where they are, and help them feel safe and confident in front of the camera. Whether your child is shy and needs a few minutes to warm up or full of energy and ready to explore, I embrace it all.",
+      "label": "Paragraph 5",
       "page": "experience",
-      "section": "Frequently asked questions",
+      "section": "Page",
       "kind": "textarea",
       "sort": 69
     },
-    "experience.frequently-asked-questions.sessions-can-take-place-outdoors-around-": {
-      "value": "Sessions can take place outdoors around Roswell and the surrounding areas, in the comfort of your home, or in a studio. Studio sessions are available for an additional rental fee, and I’ll help you choose the setting that best fits your vision.",
-      "label": "Sessions can take place outdoors around Roswell and the s…",
+    "experience.page.i-ll-get-on-their-level-follow-their-lea": {
+      "value": "I’ll get on their level, follow their lead, and get silly when needed — while gently guiding you so nothing ever feels awkward or forced. You don’t need perfectly behaved kids or practiced smiles. The most meaningful images come from real connection, and that starts with everyone feeling comfortable.",
+      "label": "Paragraph 6",
       "page": "experience",
-      "section": "Frequently asked questions",
+      "section": "Page",
       "kind": "textarea",
       "sort": 70
     },
-    "experience.frequently-asked-questions.after-booking-you-ll-receive-style-guida": {
-      "value": "After booking, you’ll receive style guidance with outfit suggestions that photograph beautifully in soft, natural light. Comfort always comes first, especially for little ones.",
-      "label": "After booking, you’ll receive style guidance with outfit …",
-      "page": "experience",
-      "section": "Frequently asked questions",
-      "kind": "textarea",
-      "sort": 71
-    },
-    "experience.frequently-asked-questions.reach-out-during-pregnancy-whenever-you-": {
-      "value": "Reach out during pregnancy whenever you feel ready so we can reserve a flexible window around your due date. Lifestyle newborn sessions are often photographed during the first few weeks, but there is no strict age cutoff — we’ll choose timing that feels comfortable for your family.",
-      "label": "Reach out during pregnancy whenever you feel ready so we …",
-      "page": "experience",
-      "section": "Frequently asked questions",
-      "kind": "textarea",
-      "sort": 72
-    },
-    "experience.frequently-asked-questions.your-thoughtfully-curated-online-gallery": {
-      "value": "Your thoughtfully curated online gallery is delivered within two weeks of your session.",
-      "label": "Your thoughtfully curated online gallery is delivered wit…",
-      "page": "experience",
-      "section": "Frequently asked questions",
-      "kind": "text",
-      "sort": 73
-    },
     "experience.page.roswell-georgia": {
       "value": "Roswell, Georgia",
-      "label": "Roswell, Georgia",
+      "label": "Small print",
       "page": "experience",
       "section": "Page",
       "kind": "text",
-      "sort": 74
+      "sort": 71
     },
     "portfolio.meta.title": {
       "value": "Portfolio | Susana Stethers Photography",
@@ -582,7 +582,7 @@
       "page": "portfolio",
       "section": "SEO",
       "kind": "text",
-      "sort": 75
+      "sort": 72
     },
     "portfolio.meta.description": {
       "value": "Explore lifestyle newborn, family, motherhood, milestone and couples photography by Susana Stethers in Roswell, Georgia.",
@@ -590,111 +590,111 @@
       "page": "portfolio",
       "section": "SEO",
       "kind": "textarea",
-      "sort": 76
+      "sort": 73
     },
     "portfolio.page.your-story-honestly-told": {
       "value": "Your story, honestly told",
-      "label": "Your story, honestly told",
+      "label": "Main heading",
       "page": "portfolio",
       "section": "Page",
       "kind": "text",
-      "sort": 77
+      "sort": 74
     },
     "portfolio.lifestyle-newborn.lifestyle-newborn": {
       "value": "Lifestyle Newborn",
-      "label": "Lifestyle Newborn",
+      "label": "Section heading",
       "page": "portfolio",
       "section": "Lifestyle Newborn",
       "kind": "text",
-      "sort": 78
+      "sort": 75
     },
     "portfolio.family.family": {
       "value": "Family",
-      "label": "Family",
+      "label": "Section heading",
       "page": "portfolio",
       "section": "Family",
       "kind": "text",
-      "sort": 79
+      "sort": 76
     },
     "portfolio.maternity-motherhood.maternity-motherhood": {
-      "value": "Maternity &amp; Motherhood",
-      "label": "Maternity & Motherhood",
+      "value": "Maternity & Motherhood",
+      "label": "Section heading",
       "page": "portfolio",
       "section": "Maternity & Motherhood",
       "kind": "text",
-      "sort": 80
+      "sort": 77
     },
     "portfolio.milestones-connection.milestones-connection": {
-      "value": "Milestones &amp; Connection",
-      "label": "Milestones & Connection",
+      "value": "Milestones & Connection",
+      "label": "Section heading",
       "page": "portfolio",
       "section": "Milestones & Connection",
       "kind": "text",
-      "sort": 81
+      "sort": 78
     },
     "portfolio.let-s-preserve-your-season.let-s-preserve-your-season": {
       "value": "Let’s preserve your season",
-      "label": "Let’s preserve your season",
+      "label": "Section heading",
       "page": "portfolio",
       "section": "Let’s preserve your season",
       "kind": "text",
-      "sort": 82
+      "sort": 79
     },
     "portfolio.lifestyle-newborn.at-home-outdoors-or-in-studio": {
       "value": "At home, outdoors, or in studio",
-      "label": "At home, outdoors, or in studio",
+      "label": "Small label above the heading",
       "page": "portfolio",
       "section": "Lifestyle Newborn",
       "kind": "text",
-      "sort": 83
+      "sort": 80
     },
     "portfolio.family.relaxed-and-playful": {
       "value": "Relaxed and playful",
-      "label": "Relaxed and playful",
+      "label": "Small label above the heading",
       "page": "portfolio",
       "section": "Family",
       "kind": "text",
-      "sort": 84
+      "sort": 81
     },
     "portfolio.maternity-motherhood.tender-timeless-connection": {
       "value": "Tender, timeless connection",
-      "label": "Tender, timeless connection",
+      "label": "Small label above the heading",
       "page": "portfolio",
       "section": "Maternity & Motherhood",
       "kind": "text",
-      "sort": 85
+      "sort": 82
     },
     "portfolio.milestones-connection.the-in-between-moments": {
       "value": "The in-between moments",
-      "label": "The in-between moments",
+      "label": "Small label above the heading",
       "page": "portfolio",
       "section": "Milestones & Connection",
       "kind": "text",
-      "sort": 86
+      "sort": 83
     },
     "portfolio.let-s-preserve-your-season.ready-when-you-are": {
       "value": "Ready when you are",
-      "label": "Ready when you are",
+      "label": "Small label above the heading",
       "page": "portfolio",
       "section": "Let’s preserve your season",
       "kind": "text",
-      "sort": 87
+      "sort": 84
     },
     "portfolio.let-s-preserve-your-season.plan-your-session": {
       "value": "Plan your session",
-      "label": "Plan your session",
+      "label": "Button text",
       "page": "portfolio",
       "section": "Let’s preserve your season",
       "kind": "text",
-      "sort": 88
+      "sort": 85
     },
     "portfolio.page.roswell-georgia": {
       "value": "Roswell, Georgia",
-      "label": "Roswell, Georgia",
+      "label": "Small print",
       "page": "portfolio",
       "section": "Page",
       "kind": "text",
-      "sort": 89
+      "sort": 86
     },
     "investment.meta.title": {
       "value": "Investment | Sessions & Pricing | Susana Stethers Photography",
@@ -702,7 +702,7 @@
       "page": "investment",
       "section": "SEO",
       "kind": "text",
-      "sort": 90
+      "sort": 87
     },
     "investment.meta.description": {
       "value": "Family and maternity sessions from $350 and lifestyle newborn sessions from $390 in Roswell, GA. Seasonal minis and special event photography are also available.",
@@ -710,91 +710,115 @@
       "page": "investment",
       "section": "SEO",
       "kind": "textarea",
-      "sort": 91
+      "sort": 88
     },
     "investment.page.sessions-pricing": {
-      "value": "Sessions &amp; pricing",
-      "label": "Sessions & pricing",
+      "value": "Sessions & pricing",
+      "label": "Main heading",
       "page": "investment",
       "section": "Page",
       "kind": "text",
-      "sort": 92
+      "sort": 89
     },
     "investment.seasonal-mini-sessions.seasonal-mini-sessions": {
       "value": "Seasonal Mini Sessions",
-      "label": "Seasonal Mini Sessions",
+      "label": "Section heading",
       "page": "investment",
       "section": "Seasonal Mini Sessions",
       "kind": "text",
-      "sort": 93
+      "sort": 90
     },
     "investment.special-events.special-events": {
       "value": "Special Events",
-      "label": "Special Events",
+      "label": "Section heading",
       "page": "investment",
       "section": "Special Events",
       "kind": "text",
-      "sort": 94
+      "sort": 91
     },
     "investment.a-few-things-to-know.a-few-things-to-know": {
       "value": "A few things to know",
-      "label": "A few things to know",
+      "label": "Section heading",
       "page": "investment",
       "section": "A few things to know",
       "kind": "text",
-      "sort": 95
+      "sort": 92
     },
     "investment.page.family-sessions": {
       "value": "Family Sessions",
-      "label": "Family Sessions",
+      "label": "Sub-heading",
       "page": "investment",
       "section": "Page",
       "kind": "text",
-      "sort": 96
+      "sort": 93
     },
     "investment.page.maternity-sessions": {
       "value": "Maternity Sessions",
-      "label": "Maternity Sessions",
+      "label": "Sub-heading 2",
       "page": "investment",
       "section": "Page",
       "kind": "text",
-      "sort": 97
+      "sort": 94
     },
     "investment.page.lifestyle-newborn-sessions": {
       "value": "Lifestyle Newborn Sessions",
-      "label": "Lifestyle Newborn Sessions",
+      "label": "Sub-heading 3",
       "page": "investment",
       "section": "Page",
       "kind": "text",
-      "sort": 98
+      "sort": 95
     },
     "investment.seasonal-mini-sessions.limited-availability": {
       "value": "Limited availability",
-      "label": "Limited availability",
+      "label": "Small label above the heading",
       "page": "investment",
       "section": "Seasonal Mini Sessions",
       "kind": "text",
-      "sort": 99
+      "sort": 96
     },
     "investment.special-events.celebrations": {
       "value": "Celebrations",
-      "label": "Celebrations",
+      "label": "Small label above the heading",
       "page": "investment",
       "section": "Special Events",
       "kind": "text",
-      "sort": 100
+      "sort": 97
     },
     "investment.a-few-things-to-know.before-you-book": {
       "value": "Before you book",
-      "label": "Before you book",
+      "label": "Small label above the heading",
       "page": "investment",
       "section": "A few things to know",
+      "kind": "text",
+      "sort": 98
+    },
+    "investment.page.350": {
+      "value": "$350",
+      "label": "Price",
+      "page": "investment",
+      "section": "Page",
+      "kind": "text",
+      "sort": 99
+    },
+    "investment.page.350-2": {
+      "value": "$350",
+      "label": "Price 2",
+      "page": "investment",
+      "section": "Page",
+      "kind": "text",
+      "sort": 100
+    },
+    "investment.page.390": {
+      "value": "$390",
+      "label": "Price 3",
+      "page": "investment",
+      "section": "Page",
       "kind": "text",
       "sort": 101
     },
     "investment.page.for-immediate-families-children-and-coup": {
       "value": "For immediate families, children, and couples.",
-      "label": "For immediate families, children, and couples.",
+      "label": "Package description",
       "page": "investment",
       "section": "Page",
       "kind": "text",
@@ -802,7 +826,7 @@
     },
     "investment.page.celebrate-this-season-before-your-little": {
       "value": "Celebrate this season before your little one arrives.",
-      "label": "Celebrate this season before your little one arrives.",
+      "label": "Package description 2",
       "page": "investment",
       "section": "Page",
       "kind": "text",
@@ -810,219 +834,195 @@
     },
     "investment.page.a-relaxed-baby-led-session-at-home-outdo": {
       "value": "A relaxed, baby-led session at home, outdoors, or in a studio.",
-      "label": "A relaxed, baby-led session at home, outdoors, or in a st…",
+      "label": "Package description 3",
       "page": "investment",
       "section": "Page",
       "kind": "text",
       "sort": 104
     },
-    "investment.page.350": {
-      "value": "$350",
-      "label": "$350",
+    "investment.page.up-to-1-hour-session": {
+      "value": "Up to 1 hour session",
+      "label": "Bullet point",
       "page": "investment",
       "section": "Page",
       "kind": "text",
       "sort": 105
     },
-    "investment.page.350-2": {
-      "value": "$350",
-      "label": "$350",
+    "investment.page.all-edited-digital-images-included": {
+      "value": "All edited digital images included",
+      "label": "Bullet point 2",
       "page": "investment",
       "section": "Page",
       "kind": "text",
       "sort": 106
     },
-    "investment.page.390": {
-      "value": "$390",
-      "label": "$390",
+    "investment.page.private-online-gallery-in-two-weeks": {
+      "value": "Private online gallery in two weeks",
+      "label": "Bullet point 3",
       "page": "investment",
       "section": "Page",
       "kind": "text",
       "sort": 107
     },
-    "investment.page.up-to-1-hour-session": {
-      "value": "Up to 1 hour session",
-      "label": "Up to 1 hour session",
+    "investment.page.immediate-family-only": {
+      "value": "Immediate family only",
+      "label": "Bullet point 4",
       "page": "investment",
       "section": "Page",
       "kind": "text",
       "sort": 108
     },
-    "investment.page.all-edited-digital-images-included": {
-      "value": "All edited digital images included",
-      "label": "All edited digital images included",
+    "investment.page.up-to-1-hour-session-2": {
+      "value": "Up to 1 hour session",
+      "label": "Bullet point 5",
       "page": "investment",
       "section": "Page",
       "kind": "text",
       "sort": 109
     },
-    "investment.page.private-online-gallery-in-two-weeks": {
-      "value": "Private online gallery in two weeks",
-      "label": "Private online gallery in two weeks",
+    "investment.page.all-edited-digital-images-included-2": {
+      "value": "All edited digital images included",
+      "label": "Bullet point 6",
       "page": "investment",
       "section": "Page",
       "kind": "text",
       "sort": 110
     },
-    "investment.page.immediate-family-only": {
-      "value": "Immediate family only",
-      "label": "Immediate family only",
+    "investment.page.private-online-gallery-in-two-weeks-2": {
+      "value": "Private online gallery in two weeks",
+      "label": "Bullet point 7",
       "page": "investment",
       "section": "Page",
       "kind": "text",
       "sort": 111
     },
-    "investment.page.up-to-1-hour-session-2": {
-      "value": "Up to 1 hour session",
-      "label": "Up to 1 hour session",
+    "investment.page.60-90-minute-session": {
+      "value": "60–90 minute session",
+      "label": "Bullet point 8",
       "page": "investment",
       "section": "Page",
       "kind": "text",
       "sort": 112
     },
-    "investment.page.all-edited-digital-images-included-2": {
+    "investment.page.all-edited-digital-images-included-3": {
       "value": "All edited digital images included",
-      "label": "All edited digital images included",
+      "label": "Bullet point 9",
       "page": "investment",
       "section": "Page",
       "kind": "text",
       "sort": 113
     },
-    "investment.page.private-online-gallery-in-two-weeks-2": {
+    "investment.page.private-online-gallery-in-two-weeks-3": {
       "value": "Private online gallery in two weeks",
-      "label": "Private online gallery in two weeks",
+      "label": "Bullet point 10",
       "page": "investment",
       "section": "Page",
       "kind": "text",
       "sort": 114
     },
-    "investment.page.60-90-minute-session": {
-      "value": "60–90 minute session",
-      "label": "60–90 minute session",
+    "investment.page.parent-sibling-portraits-included": {
+      "value": "Parent & sibling portraits included",
+      "label": "Bullet point 11",
       "page": "investment",
       "section": "Page",
       "kind": "text",
       "sort": 115
     },
-    "investment.page.all-edited-digital-images-included-3": {
-      "value": "All edited digital images included",
-      "label": "All edited digital images included",
+    "investment.a-few-things-to-know.all-edited-images-are-included-with-ever": {
+      "value": "All edited images are included with every session — there are no image packages or additional download fees.",
+      "label": "Bullet point",
       "page": "investment",
-      "section": "Page",
-      "kind": "text",
+      "section": "A few things to know",
+      "kind": "textarea",
       "sort": 116
     },
-    "investment.page.private-online-gallery-in-two-weeks-3": {
-      "value": "Private online gallery in two weeks",
-      "label": "Private online gallery in two weeks",
+    "investment.a-few-things-to-know.a-signed-contract-and-retainer-are-requi": {
+      "value": "A signed contract and retainer are required to reserve your date.",
+      "label": "Bullet point 2",
       "page": "investment",
-      "section": "Page",
+      "section": "A few things to know",
       "kind": "text",
       "sort": 117
     },
-    "investment.page.parent-sibling-portraits-included": {
-      "value": "Parent &amp; sibling portraits included",
-      "label": "Parent & sibling portraits included",
+    "investment.a-few-things-to-know.sessions-are-scheduled-during-the-best-n": {
+      "value": "Sessions are scheduled during the best natural light for the most beautiful results.",
+      "label": "Bullet point 3",
       "page": "investment",
-      "section": "Page",
+      "section": "A few things to know",
       "kind": "text",
       "sort": 118
     },
-    "investment.a-few-things-to-know.all-edited-images-are-included-with-ever": {
-      "value": "All edited images are included with every session — there are no image packages or additional download fees.",
-      "label": "All edited images are included with every session — there…",
+    "investment.a-few-things-to-know.outdoor-in-home-and-studio-options-are-a": {
+      "value": "Outdoor, in-home, and studio options are available. Studio rental requires an additional fee.",
+      "label": "Bullet point 4",
       "page": "investment",
       "section": "A few things to know",
       "kind": "textarea",
       "sort": 119
     },
-    "investment.a-few-things-to-know.a-signed-contract-and-retainer-are-requi": {
-      "value": "A signed contract and retainer are required to reserve your date.",
-      "label": "A signed contract and retainer are required to reserve yo…",
+    "investment.a-few-things-to-know.extended-family-sessions-are-available-u": {
+      "value": "Extended family sessions are available upon request.",
+      "label": "Bullet point 5",
       "page": "investment",
       "section": "A few things to know",
       "kind": "text",
       "sort": 120
     },
-    "investment.a-few-things-to-know.sessions-are-scheduled-during-the-best-n": {
-      "value": "Sessions are scheduled during the best natural light for the most beautiful results.",
-      "label": "Sessions are scheduled during the best natural light for …",
+    "investment.page.book-this-session": {
+      "value": "Book this session",
+      "label": "Button text",
       "page": "investment",
-      "section": "A few things to know",
+      "section": "Page",
       "kind": "text",
       "sort": 121
     },
-    "investment.a-few-things-to-know.outdoor-in-home-and-studio-options-are-a": {
-      "value": "Outdoor, in-home, and studio options are available. Studio rental requires an additional fee.",
-      "label": "Outdoor, in-home, and studio options are available. Studi…",
-      "page": "investment",
-      "section": "A few things to know",
-      "kind": "textarea",
-      "sort": 122
-    },
-    "investment.a-few-things-to-know.extended-family-sessions-are-available-u": {
-      "value": "Extended family sessions are available upon request.",
-      "label": "Extended family sessions are available upon request.",
-      "page": "investment",
-      "section": "A few things to know",
-      "kind": "text",
-      "sort": 123
-    },
-    "investment.page.book-this-session": {
-      "value": "Book this session",
-      "label": "Book this session",
-      "page": "investment",
-      "section": "Page",
-      "kind": "text",
-      "sort": 124
-    },
     "investment.page.book-this-session-2": {
       "value": "Book this session",
-      "label": "Book this session",
+      "label": "Button text 2",
       "page": "investment",
       "section": "Page",
       "kind": "text",
-      "sort": 125
+      "sort": 122
     },
     "investment.page.book-this-session-3": {
       "value": "Book this session",
-      "label": "Book this session",
+      "label": "Button text 3",
       "page": "investment",
       "section": "Page",
       "kind": "text",
-      "sort": 126
+      "sort": 123
     },
     "investment.seasonal-mini-sessions.ask-about-upcoming-minis": {
       "value": "Ask about upcoming minis",
-      "label": "Ask about upcoming minis",
+      "label": "Link text",
       "page": "investment",
       "section": "Seasonal Mini Sessions",
       "kind": "text",
-      "sort": 127
+      "sort": 124
     },
     "investment.special-events.contact-me-for-event-pricing": {
       "value": "Contact me for event pricing",
-      "label": "Contact me for event pricing",
+      "label": "Link text",
       "page": "investment",
       "section": "Special Events",
       "kind": "text",
-      "sort": 128
+      "sort": 125
     },
     "investment.seasonal-mini-sessions.every-session-includes-style-guidance-an": {
       "value": "Every session includes style guidance and location recommendations.",
-      "label": "Every session includes style guidance and location recomm…",
+      "label": "Small print",
       "page": "investment",
       "section": "Seasonal Mini Sessions",
       "kind": "text",
-      "sort": 129
+      "sort": 126
     },
     "investment.page.roswell-georgia": {
       "value": "Roswell, Georgia",
-      "label": "Roswell, Georgia",
+      "label": "Small print",
       "page": "investment",
       "section": "Page",
       "kind": "text",
-      "sort": 130
+      "sort": 127
     },
     "contact.meta.title": {
       "value": "Contact | Book a Session | Susana Stethers Photography",
@@ -1030,7 +1030,7 @@
       "page": "contact",
       "section": "SEO",
       "kind": "text",
-      "sort": 131
+      "sort": 128
     },
     "contact.meta.description": {
       "value": "Book a family, newborn, maternity or couples session in Roswell, Georgia. Tell Susana about your family and she'll be in touch within 1–2 business days.",
@@ -1038,47 +1038,47 @@
       "page": "contact",
       "section": "SEO",
       "kind": "textarea",
-      "sort": 132
+      "sort": 129
     },
     "contact.thank-you.let-s-tell-your-story": {
       "value": "Let’s tell your story",
-      "label": "Let’s tell your story",
+      "label": "Main heading",
+      "page": "contact",
+      "section": "Thank you!",
+      "kind": "text",
+      "sort": 130
+    },
+    "contact.thank-you.thank-you": {
+      "value": "Thank you!",
+      "label": "Section heading",
+      "page": "contact",
+      "section": "Thank you!",
+      "kind": "text",
+      "sort": 131
+    },
+    "contact.thank-you.send-message": {
+      "value": "Send message",
+      "label": "Button text",
+      "page": "contact",
+      "section": "Thank you!",
+      "kind": "text",
+      "sort": 132
+    },
+    "contact.thank-you.roswell-georgia-surrounding-areas-susana": {
+      "value": "Roswell, Georgia &amp; surrounding areas<br>\n        <a href=\"https://www.instagram.com/susanatakesaphoto/\" target=\"_blank\" rel=\"noopener\">@susanatakesaphoto</a>",
+      "label": "Small print",
       "page": "contact",
       "section": "Thank you!",
       "kind": "text",
       "sort": 133
     },
-    "contact.thank-you.thank-you": {
-      "value": "Thank you!",
-      "label": "Thank you!",
-      "page": "contact",
-      "section": "Thank you!",
-      "kind": "text",
-      "sort": 134
-    },
-    "contact.thank-you.send-message": {
-      "value": "Send message",
-      "label": "Send message",
-      "page": "contact",
-      "section": "Thank you!",
-      "kind": "text",
-      "sort": 135
-    },
-    "contact.thank-you.roswell-georgia-surrounding-areas-susana": {
-      "value": "Roswell, Georgia &amp; surrounding areas<br>\n        <a href=\"https://www.instagram.com/susanatakesaphoto/\" target=\"_blank\" rel=\"noopener\">@susanatakesaphoto</a>",
-      "label": "Roswell, Georgia & surrounding areas @susanatakesaphoto",
-      "page": "contact",
-      "section": "Thank you!",
-      "kind": "text",
-      "sort": 136
-    },
     "contact.page.roswell-georgia": {
       "value": "Roswell, Georgia",
-      "label": "Roswell, Georgia",
+      "label": "Small print",
       "page": "contact",
       "section": "Page",
       "kind": "text",
-      "sort": 137
+      "sort": 134
     }
   },
   "images": {
@@ -1248,5 +1248,5 @@
       "alt": "Mother cuddling her daughter in a floral studio setting"
     }
   },
-  "generated": "2026-07-12T21:01:49.071Z"
+  "generated": "2026-07-12T21:35:52.288Z"
 }

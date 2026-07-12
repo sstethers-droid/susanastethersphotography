@@ -73,11 +73,11 @@
     </section>
   </main>
 
-  <!-- Sticky publish bar — only appears when there is something to save -->
-  <div class="save-bar" id="save-bar" hidden>
-    <span id="dirty-count">0 unsaved changes</span>
+  <!-- Sticky publish bar — always visible, disabled until there's a change -->
+  <div class="save-bar" id="save-bar">
+    <span id="dirty-count">No unsaved changes</span>
     <p class="admin-message" id="save-message" hidden></p>
-    <button class="btn" type="button" id="save-publish">Save &amp; publish</button>
+    <button class="btn" type="button" id="save-publish" disabled>Save &amp; publish</button>
   </div>
 
 </div>

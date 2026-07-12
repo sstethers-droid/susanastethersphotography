@@ -77,11 +77,18 @@ for (const file of PAGES) {
   const $ = cheerio.load(readFileSync(file, 'utf8'), { decodeEntities: false });
 
   // 1. text nodes
+  //    If the stored value contains no markup we set it as TEXT, so cheerio
+  //    escapes it correctly. Setting "Maternity & Motherhood" via .html() would
+  //    emit a bare "&" (invalid); setting an entity-encoded string via .text()
+  //    would double-escape it into "&amp;amp;". This picks the right one.
   $('[data-cms]').each((_, el) => {
     const $el = $(el);
     const key = $el.attr('data-cms');
-    if (text[key] != null) $el.html(text[key]);
+    const v = text[key];
     $el.removeAttr('data-cms');
+    if (v == null) return;
+    if (/<[a-z][\s\S]*>/i.test(v)) $el.html(v);
+    else $el.text(cheerio.load(`<x>${v}</x>`)('x').text());   // decode, then escape once
   });
 
   // 2. attribute content (meta description)

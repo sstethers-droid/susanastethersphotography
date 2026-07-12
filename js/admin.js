@@ -40,6 +40,20 @@
     return n;
   }
 
+  /**
+   * Turn "Maternity &amp; Motherhood" into "Maternity & Motherhood".
+   * Older rows were seeded straight from innerHTML, so they still carry entity
+   * codes. Susana should never see "&amp;" in an edit box.
+   * Skipped when the value legitimately contains markup (e.g. a link).
+   */
+  function decode(v) {
+    if (v == null) return '';
+    if (/<[a-z][\s\S]*>/i.test(v)) return v;
+    var t = document.createElement('textarea');
+    t.innerHTML = v;
+    return t.value;
+  }
+
   /* ==================================================================== LOGIN */
   var loginForm = document.getElementById('login-form');
   if (loginForm) {
@@ -149,11 +163,17 @@
 
         bySection[section].forEach(function (row) {
           var field = el('label', 'cms-field');
-          field.append(el('span', 'cms-field__label', row.label));
+
+          // Chip naming WHAT this field is ("Section heading", "Button text",
+          // "Price"). Previously the label just repeated the text sitting in
+          // the box below it, which told Susana nothing.
+          var head = el('span', 'cms-field__head');
+          head.append(el('span', 'cms-chip', row.label));
+          field.append(head);
 
           var input = row.kind === 'textarea' ? el('textarea') : el('input');
           if (row.kind === 'textarea') input.rows = 3; else input.type = 'text';
-          input.value = row.value;
+          input.value = decode(row.value);
 
           // Live counter on the Google description: it gets cut off past ~160
           // characters, and under ~70 it wastes the space.
@@ -189,12 +209,19 @@
   var saveBtn = document.getElementById('save-publish');
   var saveMsg = document.getElementById('save-message');
 
+  // The save bar is ALWAYS on screen — Susana asked for a visible save button,
+  // and a control that only materialises once you've already typed is a poor
+  // affordance: you can't see, before you start, that saving is even possible.
+  // It just sits disabled until there's something to save.
   function markDirty() {
     var n = Object.keys(state.dirty).length;
-    saveBar.hidden = n === 0;
+    saveBtn.disabled = n === 0;
     document.getElementById('dirty-count').textContent =
-      n + (n === 1 ? ' unsaved change' : ' unsaved changes');
+      n === 0 ? 'No unsaved changes'
+              : n + (n === 1 ? ' unsaved change' : ' unsaved changes');
+    saveBar.classList.toggle('is-dirty', n > 0);
   }
+  markDirty();
 
   // Don't let her lose work by closing the tab mid-edit.
   window.addEventListener('beforeunload', function (e) {

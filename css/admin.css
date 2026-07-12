@@ -171,3 +171,48 @@
 
 .admin-message.is-success { color: #4B8060; }
 .admin-message.is-error   { color: #A96F6F; }
+
+/* ===========================================================================
+   FIX: the [hidden] attribute sets display:none via the UA stylesheet, which
+   any class rule with a `display` beats on specificity. .admin-loading had
+   display:grid, so the "Opening your private portal…" overlay never went away
+   even after we set hidden. This makes [hidden] win, everywhere.
+   =========================================================================== */
+[hidden] { display: none !important; }
+
+/* ------------------------------------------------- field type chips */
+.cms-field__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.cms-chip {
+  display: inline-block;
+  font-size: 10.5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--c-accent2, #8399AD);
+  background: var(--c-t1, #F0F4F8);
+  border: 1px solid var(--c-l2, #D5DEE7);
+  border-radius: 3px;
+  padding: 3px 8px;
+  line-height: 1.4;
+}
+
+/* ------------------------------------------------- save bar states */
+.save-bar.is-dirty {
+  border-top-color: var(--c-accent, #9FB4C7);
+  background: var(--c-t1, #F0F4F8);
+}
+.save-bar #save-publish:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+.save-bar.is-dirty #dirty-count {
+  color: var(--ink, #37322B);
+  font-weight: 600;
+}
+/* keep the last field clear of the sticky bar */
+.admin-main { padding-bottom: 96px; }
