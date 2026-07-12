@@ -31,10 +31,7 @@
   </section>
 </main>
 <script src="js/config.js"></script>
-<script type="module">
-  import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/+esm';
-  window.supabase = { createClient };
-  await import('./js/admin.js');
-</script>
+<script src="js/supabase-2.57.4.js"></script>
+<script src="js/admin.js"></script>
 </body>
 </html>
