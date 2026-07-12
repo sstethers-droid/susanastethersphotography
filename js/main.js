@@ -10,6 +10,31 @@
     el.textContent = new Date().getFullYear();
   });
 
+  /* --------------------------------------------- Owner-managed site images */
+  var publicCfg = window.SITE_CONFIG || {};
+  if (publicCfg.SUPABASE_URL && publicCfg.SUPABASE_ANON_KEY) {
+    fetch(publicCfg.SUPABASE_URL + '/rest/v1/site_images?select=slot,url&url=not.is.null', {
+      headers: { 'apikey': publicCfg.SUPABASE_ANON_KEY }
+    }).then(function (res) {
+      if (!res.ok) throw new Error('Could not load managed images');
+      return res.json();
+    }).then(function (rows) {
+      var bySlot = {};
+      rows.forEach(function (row) { bySlot[row.slot] = row.url; });
+      document.querySelectorAll('img[src*="images/"]').forEach(function (img) {
+        var file = (img.getAttribute('src') || '').split('/').pop().replace(/\.(jpe?g|webp|png)$/i, '');
+        var slot = file.replace(/-(280|300|380|480|500|560|600|760|800|960|1000|1120|1600|3200)$/i, '');
+        if (!bySlot[slot]) return;
+        var picture = img.closest('picture');
+        img.src = bySlot[slot];
+        img.removeAttribute('srcset');
+        if (picture) picture.querySelectorAll('source').forEach(function (source) { source.srcset = bySlot[slot]; });
+      });
+    }).catch(function () {
+      // Local images remain visible if the optional owner image service is unavailable.
+    });
+  }
+
   /* ---------------------------------------------------------------- Carousel */
   document.querySelectorAll('[data-carousel-prev], [data-carousel-next]').forEach(function (btn) {
     var isNext = btn.hasAttribute('data-carousel-next');
@@ -25,6 +50,30 @@
       track.scrollBy({ left: isNext ? step : -step, behavior: 'smooth' });
     });
   });
+
+  /* ----------------------------------------------------------- Hero gallery */
+  var heroSlides = document.querySelectorAll('.hero__slide');
+  var heroDots = document.querySelectorAll('.hero__dots button');
+  var heroIndex = 0;
+  var heroTimer;
+  function showHero(index) {
+    heroIndex = index;
+    heroSlides.forEach(function (slide, i) { slide.classList.toggle('is-active', i === index); });
+    heroDots.forEach(function (dot, i) {
+      dot.classList.toggle('is-active', i === index);
+      if (i === index) dot.setAttribute('aria-current', 'true');
+      else dot.removeAttribute('aria-current');
+    });
+  }
+  function startHero() {
+    if (heroSlides.length < 2 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    clearInterval(heroTimer);
+    heroTimer = setInterval(function () { showHero((heroIndex + 1) % heroSlides.length); }, 6000);
+  }
+  heroDots.forEach(function (dot, i) {
+    dot.addEventListener('click', function () { showHero(i); startHero(); });
+  });
+  startHero();
 
   /* --------------------------------------------------------------------- FAQ */
   document.querySelectorAll('.faq__q').forEach(function (btn) {

@@ -7,6 +7,7 @@
 # The web-ready derivatives in images/ (5.9 MB) are what actually ship.
 # --------------------------------------------------------------------------
 _original-photos/
+images/Website/
 
 # The original Claude design-canvas prototype. Kept for reference; not shipped.
 _prototype/

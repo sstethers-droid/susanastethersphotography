@@ -16,7 +16,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Prata&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 
 <!-- Local business structured data — helps Google show her in local search -->
@@ -58,12 +58,24 @@
 
   <!-- ============================================================ HERO -->
   <section class="hero">
-    <picture>
+    <picture class="hero__slide is-active">
       <source type="image/webp" srcset="images/hero-1600.webp 1600w, images/hero-3200.webp 3200w" sizes="100vw">
       <img class="hero__img" src="images/hero-1600.jpg"
            srcset="images/hero-1600.jpg 1600w, images/hero-3200.jpg 3200w" sizes="100vw"
            width="1600" height="900" fetchpriority="high"
-           alt="A young child leaning into a crib to kiss their newborn sibling in a bright nursery">
+           alt="A family of four sitting together at home in soft natural light">
+    </picture>
+    <picture class="hero__slide">
+      <source type="image/webp" srcset="images/hero-maternity-1600.webp 1600w, images/hero-maternity-3200.webp 3200w" sizes="100vw">
+      <img class="hero__img" src="images/hero-maternity-1600.jpg"
+           srcset="images/hero-maternity-1600.jpg 1600w, images/hero-maternity-3200.jpg 3200w" sizes="100vw"
+           width="1600" height="900" alt="Expectant parents sharing a quiet moment in their light-filled home">
+    </picture>
+    <picture class="hero__slide">
+      <source type="image/webp" srcset="images/hero-newborn-1600.webp 1600w, images/hero-newborn-3200.webp 3200w" sizes="100vw">
+      <img class="hero__img" src="images/hero-newborn-1600.jpg"
+           srcset="images/hero-newborn-1600.jpg 1600w, images/hero-newborn-3200.jpg 3200w" sizes="100vw"
+           width="1600" height="900" alt="A newborn resting peacefully in soft natural light">
     </picture>
     <div class="hero__overlay">
       <div class="hero__card">
@@ -71,6 +83,11 @@
         <h1>Capture the moments you&rsquo;ll never want to forget</h1>
         <a class="btn" href="/contact.html">Book a session</a>
       </div>
+    </div>
+    <div class="hero__dots" aria-label="Featured photographs">
+      <button class="is-active" type="button" aria-label="Show family photograph" aria-current="true"></button>
+      <button type="button" aria-label="Show maternity photograph"></button>
+      <button type="button" aria-label="Show newborn photograph"></button>
     </div>
   </section>
 
@@ -80,6 +97,20 @@
     <p>I&rsquo;m a Roswell, GA photographer specializing in family, newborn, maternity, milestone, and couples photography. My approach is relaxed and natural, focusing on genuine connection and creating light, airy images that feel timeless and true to your family.</p>
     <p>Whether you&rsquo;re welcoming a new baby, celebrating a milestone, or simply wanting to remember this season as it is, I&rsquo;m here to document your story in a way that feels effortless and meaningful.</p>
     <a class="link-more" href="/about.html">More about me</a>
+  </section>
+
+  <section class="story" aria-labelledby="story-title">
+    <div class="story__copy">
+      <p class="eyebrow">A glimpse into the stories</p>
+      <h2 id="story-title">Honest moments, artfully preserved</h2>
+      <p>From the smallest newborn details to the beautiful in-between moments of family life, every gallery is created to feel warm, personal, and entirely your own.</p>
+      <a class="link-more" href="/portfolio.html">Explore the portfolio</a>
+    </div>
+    <div class="story__gallery">
+      <picture class="story__image story__image--tall"><source type="image/webp" srcset="images/portfolio-motherhood-2-800.webp"><img src="images/portfolio-motherhood-2-800.jpg" width="800" height="1000" loading="lazy" alt="Mother cuddling her daughter in a floral studio"></picture>
+      <picture class="story__image"><source type="image/webp" srcset="images/portfolio-newborn-2-800.webp"><img src="images/portfolio-newborn-2-800.jpg" width="800" height="1000" loading="lazy" alt="Newborn resting peacefully in a bassinet"></picture>
+      <picture class="story__image"><source type="image/webp" srcset="images/portfolio-family-2-800.webp"><img src="images/portfolio-family-2-800.jpg" width="800" height="1000" loading="lazy" alt="Family gathered together in a spring garden"></picture>
+    </div>
   </section>
 
   <!-- ======================================================== SESSIONS -->
@@ -100,7 +131,7 @@
               <picture>
                 <source type="image/webp" srcset="images/sess-newborn-280.webp 280w, images/sess-newborn-560.webp 560w" sizes="250px">
                 <img src="images/sess-newborn-280.jpg" srcset="images/sess-newborn-280.jpg 280w, images/sess-newborn-560.jpg 560w" sizes="250px"
-                     width="280" height="420" loading="lazy" alt="Mother in a pink sweater cradling her newborn daughter">
+                     width="280" height="420" loading="lazy" alt="Sleeping newborn wrapped in a soft blue blanket">
               </picture>
             </div>
             <h3 class="sess-card__name">Newborn</h3>
@@ -112,7 +143,7 @@
               <picture>
                 <source type="image/webp" srcset="images/sess-family-280.webp 280w, images/sess-family-560.webp 560w" sizes="250px">
                 <img src="images/sess-family-280.jpg" srcset="images/sess-family-280.jpg 280w, images/sess-family-560.jpg 560w" sizes="250px"
-                     width="280" height="420" loading="lazy" alt="Parents sitting together on a bed holding their newborn baby">
+                     width="280" height="420" loading="lazy" alt="Family of four walking together outdoors in autumn">
               </picture>
             </div>
             <h3 class="sess-card__name">Family</h3>
@@ -124,7 +155,7 @@
               <picture>
                 <source type="image/webp" srcset="images/sess-maternity-280.webp 280w, images/sess-maternity-560.webp 560w" sizes="250px">
                 <img src="images/sess-maternity-280.jpg" srcset="images/sess-maternity-280.jpg 280w, images/sess-maternity-560.jpg 560w" sizes="250px"
-                     width="280" height="420" loading="lazy" alt="">
+                     width="280" height="420" loading="lazy" alt="Expectant mother standing outdoors in a light dress">
               </picture>
             </div>
             <h3 class="sess-card__name">Maternity</h3>
@@ -136,7 +167,7 @@
               <picture>
                 <source type="image/webp" srcset="images/sess-couples-280.webp 280w, images/sess-couples-560.webp 560w" sizes="250px">
                 <img src="images/sess-couples-280.jpg" srcset="images/sess-couples-280.jpg 280w, images/sess-couples-560.jpg 560w" sizes="250px"
-                     width="280" height="420" loading="lazy" alt="A couple standing close together holding their baby">
+                     width="280" height="420" loading="lazy" alt="Expectant parents embracing outdoors">
               </picture>
             </div>
             <h3 class="sess-card__name">Couples</h3>
@@ -157,14 +188,14 @@
         <picture>
           <source type="image/webp" srcset="images/exp-1-560.webp 560w, images/exp-1-1120.webp 1120w" sizes="(max-width: 800px) 90vw, 480px">
           <img src="images/exp-1-560.jpg" srcset="images/exp-1-560.jpg 560w, images/exp-1-1120.jpg 1120w" sizes="(max-width: 800px) 90vw, 480px"
-               width="560" height="840" loading="lazy" alt="Big sister leaning over the crib to kiss her newborn sister">
+               width="560" height="840" loading="lazy" alt="Mother and daughter posing together in a floral studio setting">
         </picture>
       </div>
       <div class="stack-media__front">
         <picture>
           <source type="image/webp" srcset="images/exp-2-300.webp 300w, images/exp-2-600.webp 600w" sizes="240px">
           <img src="images/exp-2-300.jpg" srcset="images/exp-2-300.jpg 300w, images/exp-2-600.jpg 600w" sizes="240px"
-               width="300" height="450" loading="lazy" alt="Mother holding her newborn close by a sunlit window">
+               width="300" height="450" loading="lazy" alt="Mother cuddling her young daughter in a floral studio setting">
         </picture>
       </div>
     </div>
@@ -213,27 +244,27 @@
     <div class="ig__grid">
       <a href="https://www.instagram.com/susanatakesaphoto/" target="_blank" rel="noopener">
         <picture><source type="image/webp" srcset="images/ig-1-300.webp 300w, images/ig-1-600.webp 600w" sizes="(max-width:600px) 50vw, 16vw">
-        <img src="images/ig-1-300.jpg" srcset="images/ig-1-300.jpg 300w, images/ig-1-600.jpg 600w" sizes="(max-width:600px) 50vw, 16vw" width="300" height="300" loading="lazy" alt="Mother kissing her newborn baby's forehead"></picture>
+        <img src="images/ig-1-300.jpg" srcset="images/ig-1-300.jpg 300w, images/ig-1-600.jpg 600w" sizes="(max-width:600px) 50vw, 16vw" width="300" height="300" loading="lazy" alt="Expectant mother smiling outdoors"></picture>
       </a>
       <a href="https://www.instagram.com/susanatakesaphoto/" target="_blank" rel="noopener">
         <picture><source type="image/webp" srcset="images/ig-2-300.webp 300w, images/ig-2-600.webp 600w" sizes="(max-width:600px) 50vw, 16vw">
-        <img src="images/ig-2-300.jpg" srcset="images/ig-2-300.jpg 300w, images/ig-2-600.jpg 600w" sizes="(max-width:600px) 50vw, 16vw" width="300" height="300" loading="lazy" alt="Big sister holding her newborn sibling on a bed"></picture>
+        <img src="images/ig-2-300.jpg" srcset="images/ig-2-300.jpg 300w, images/ig-2-600.jpg 600w" sizes="(max-width:600px) 50vw, 16vw" width="300" height="300" loading="lazy" alt="Mother and daughter laughing together outdoors"></picture>
       </a>
       <a href="https://www.instagram.com/susanatakesaphoto/" target="_blank" rel="noopener">
         <picture><source type="image/webp" srcset="images/ig-3-300.webp 300w, images/ig-3-600.webp 600w" sizes="(max-width:600px) 50vw, 16vw">
-        <img src="images/ig-3-300.jpg" srcset="images/ig-3-300.jpg 300w, images/ig-3-600.jpg 600w" sizes="(max-width:600px) 50vw, 16vw" width="300" height="300" loading="lazy" alt="Black and white photo of a mother lying beside her sleeping newborn"></picture>
+        <img src="images/ig-3-300.jpg" srcset="images/ig-3-300.jpg 300w, images/ig-3-600.jpg 600w" sizes="(max-width:600px) 50vw, 16vw" width="300" height="300" loading="lazy" alt="Mother cuddling her baby at home"></picture>
       </a>
       <a href="https://www.instagram.com/susanatakesaphoto/" target="_blank" rel="noopener">
         <picture><source type="image/webp" srcset="images/ig-4-300.webp 300w, images/ig-4-600.webp 600w" sizes="(max-width:600px) 50vw, 16vw">
-        <img src="images/ig-4-300.jpg" srcset="images/ig-4-300.jpg 300w, images/ig-4-600.jpg 600w" sizes="(max-width:600px) 50vw, 16vw" width="300" height="300" loading="lazy" alt="Mother in a pink sweater touching foreheads with her newborn"></picture>
+        <img src="images/ig-4-300.jpg" srcset="images/ig-4-300.jpg 300w, images/ig-4-600.jpg 600w" sizes="(max-width:600px) 50vw, 16vw" width="300" height="300" loading="lazy" alt="Mother and daughter sharing a quiet moment in a floral studio"></picture>
       </a>
       <a href="https://www.instagram.com/susanatakesaphoto/" target="_blank" rel="noopener">
         <picture><source type="image/webp" srcset="images/ig-5-300.webp 300w, images/ig-5-600.webp 600w" sizes="(max-width:600px) 50vw, 16vw">
-        <img src="images/ig-5-300.jpg" srcset="images/ig-5-300.jpg 300w, images/ig-5-600.jpg 600w" sizes="(max-width:600px) 50vw, 16vw" width="300" height="300" loading="lazy" alt="Mother standing in the nursery holding her newborn daughter"></picture>
+        <img src="images/ig-5-300.jpg" srcset="images/ig-5-300.jpg 300w, images/ig-5-600.jpg 600w" sizes="(max-width:600px) 50vw, 16vw" width="300" height="300" loading="lazy" alt="Mother holding her young child in a flower field"></picture>
       </a>
       <a href="https://www.instagram.com/susanatakesaphoto/" target="_blank" rel="noopener">
         <picture><source type="image/webp" srcset="images/ig-6-300.webp 300w, images/ig-6-600.webp 600w" sizes="(max-width:600px) 50vw, 16vw">
-        <img src="images/ig-6-300.jpg" srcset="images/ig-6-300.jpg 300w, images/ig-6-600.jpg 600w" sizes="(max-width:600px) 50vw, 16vw" width="300" height="300" loading="lazy" alt="Newborn baby resting in a crib in a bright nursery"></picture>
+        <img src="images/ig-6-300.jpg" srcset="images/ig-6-300.jpg 300w, images/ig-6-600.jpg 600w" sizes="(max-width:600px) 50vw, 16vw" width="300" height="300" loading="lazy" alt="Newborn sleeping peacefully in a soft blue wrap"></picture>
       </a>
     </div>
   </section>
