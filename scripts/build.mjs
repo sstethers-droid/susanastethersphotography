@@ -31,6 +31,45 @@ const PASSTHROUGH = ['login.html','admin.html','css','js','images','robots.txt',
 
 const OUT = 'dist';
 
+/* ------------------------------------------------------------- safety guard */
+// Fail the build loudly if a secret ever lands in a shipped file.
+//
+// The deploy-hook URL is a capability URL — possession is authorisation. Anyone
+// holding it can trigger endless rebuilds. The Supabase SERVICE ROLE key is far
+// worse: it bypasses every RLS policy in schema.sql and exposes the entire
+// client list. Neither belongs in this repo, and a failed build is a much
+// cheaper way to find that out than a leak.
+{
+  const FORBIDDEN = [
+    [/api\.vercel\.com\/v\d+\/integrations\/deploy\//i, 'a Vercel deploy-hook URL'],
+    [/\bservice_role\b/i, 'a Supabase service-role key'],
+    [/\bsb_secret_[A-Za-z0-9_-]+/, 'a Supabase secret key'],
+    [/\beyJ[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}\./, 'a JWT (possibly a service key)'],
+  ];
+  const scan = (dir) => {
+    for (const entry of readdirSync(dir)) {
+      if (['node_modules', '.git', 'dist', '_original-photos', 'images'].includes(entry)) continue;
+      const full = `${dir}/${entry}`;
+      if (statSync(full).isDirectory()) { scan(full); continue; }
+      if (!/\.(html|js|mjs|json|css|md|sql)$/i.test(entry)) continue;
+      const body = readFileSync(full, 'utf8');
+      // A file may opt out ONLY by saying so explicitly, in the file itself.
+      // Used by the setup docs, which have to show what the URL looks like.
+      // Deliberately not a blanket skip of docs/ — a real key pasted into a
+      // doc is still a real leak.
+      if (body.includes('secret-scan: allow-example')) continue;
+      for (const [re, what] of FORBIDDEN) {
+        if (re.test(body)) {
+          console.error(`\n  ✗ SECRET IN REPO: ${full} appears to contain ${what}.`);
+          console.error('    This must never be committed. See docs/TURN-ON-PUBLISHING.md.\n');
+          process.exit(1);
+        }
+      }
+    }
+  };
+  scan('.');
+}
+
 /* ----------------------------------------------------------- fetch content */
 async function fromSupabase(table) {
   if (!SUPABASE_URL || !SUPABASE_KEY) return null;
