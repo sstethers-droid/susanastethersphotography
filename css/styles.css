@@ -278,7 +278,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: .015em
   gap: 14px;
   text-align: center;
 }
-.sess-card__media { aspect-ratio: 2 / 3; overflow: hidden; }
+.sess-card__media { aspect-ratio: 4 / 5; overflow: hidden; }
 .sess-card__media img { width: 100%; height: 100%; object-fit: cover; }
 .sess-card__name { font-family: var(--serif); font-size: 21px; }
 .sess-card__note { font-size: 13px; line-height: 1.6; color: var(--muted); }
@@ -304,6 +304,12 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: .015em
 .carousel-btn:hover { color: var(--ink); }
 .carousel-btn--prev { left: -10px; }
 .carousel-btn--next { right: -10px; }
+
+@media (min-width: 801px) {
+  .carousel { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); overflow: visible; }
+  .sess-card { max-width: none; }
+  .carousel-btn { display: none; }
+}
 
 /* ----------------------------------------------------------- Experience */
 .split {

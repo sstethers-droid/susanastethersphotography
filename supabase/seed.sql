@@ -160,10 +160,10 @@ insert into public.site_images (slot,label,section,alt) values ('hero-newborn','
 insert into public.site_images (slot,label,section,alt) values ('portfolio-motherhood-2','Portfolio Motherhood 2','Home','Expectant parents sharing a quiet moment in a spring garden') on conflict (slot) do nothing;
 insert into public.site_images (slot,label,section,alt) values ('portfolio-newborn-2','Portfolio Newborn 2','Home','Newborn resting peacefully in a bassinet') on conflict (slot) do nothing;
 insert into public.site_images (slot,label,section,alt) values ('portfolio-family-2','Portfolio Family 2','Home','Family gathered together in a spring garden') on conflict (slot) do nothing;
-insert into public.site_images (slot,label,section,alt) values ('sess-newborn','Sess Newborn','Home','Sleeping newborn wrapped in a soft blue blanket') on conflict (slot) do nothing;
-insert into public.site_images (slot,label,section,alt) values ('sess-family','Sess Family','Home','Family of four walking together outdoors in autumn') on conflict (slot) do nothing;
-insert into public.site_images (slot,label,section,alt) values ('sess-maternity','Sess Maternity','Home','Expectant mother standing outdoors in a light dress') on conflict (slot) do nothing;
-insert into public.site_images (slot,label,section,alt) values ('sess-couples','Sess Couples','Home','Engaged couple embracing outdoors in North Georgia') on conflict (slot) do nothing;
+insert into public.site_images (slot,label,section,alt) values ('sess-newborn','Sess Newborn','Home','Mother sharing a quiet moment with her newborn at home') on conflict (slot) do nothing;
+insert into public.site_images (slot,label,section,alt) values ('sess-family','Sess Family','Home','Mother and four children together in a sunlit spring garden') on conflict (slot) do nothing;
+insert into public.site_images (slot,label,section,alt) values ('sess-maternity','Sess Maternity','Home','Expectant parents and their daughter gathered together in a bright studio') on conflict (slot) do nothing;
+insert into public.site_images (slot,label,section,alt) values ('sess-couples','Sess Couples','Home','Laura and Tyler embracing outdoors in North Georgia') on conflict (slot) do nothing;
 insert into public.site_images (slot,label,section,alt) values ('exp-1','Exp 1','Home','Mother and daughter posing together in a floral studio setting') on conflict (slot) do nothing;
 insert into public.site_images (slot,label,section,alt) values ('exp-2','Exp 2','Home','Mother cuddling her young daughter in a floral studio setting') on conflict (slot) do nothing;
 insert into public.site_images (slot,label,section,alt) values ('ig-1','Ig 1','Home','Expectant mother smiling outdoors') on conflict (slot) do nothing;
