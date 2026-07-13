@@ -168,6 +168,25 @@ for (const file of PAGES) {
   // description mirrors into og:description so social cards match Google
   const d = $('meta[name="description"]').attr('content');
   if (d) $('meta[property="og:description"]').attr('content', d);
+  const pageTitle = $('title').text().trim();
+  const socialImage = $('meta[property="og:image"]').attr('content');
+  const seoMeta = [
+    ['meta[name="robots"]', `<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">`],
+    ['meta[property="og:site_name"]', `<meta property="og:site_name" content="Susana Stethers Photography">`],
+    ['meta[property="og:locale"]', `<meta property="og:locale" content="en_US">`],
+    ['meta[property="og:image:width"]', `<meta property="og:image:width" content="1600">`],
+    ['meta[property="og:image:height"]', `<meta property="og:image:height" content="1067">`],
+    ['meta[name="twitter:title"]', `<meta name="twitter:title" content="${pageTitle.replace(/"/g, '&quot;')}">`],
+    ['meta[name="twitter:description"]', `<meta name="twitter:description" content="${(d || '').replace(/"/g, '&quot;')}">`],
+    ['meta[name="twitter:image"]', `<meta name="twitter:image" content="${socialImage}">`],
+    ['meta[name="geo.region"]', `<meta name="geo.region" content="US-GA">`],
+    ['meta[name="geo.placename"]', `<meta name="geo.placename" content="Roswell">`],
+  ];
+  for (const [selector, tag] of seoMeta) if (!$(selector).length) $('head').append(`\n${tag}`);
+  if (!$('link[rel="alternate"][hreflang="en-US"]').length) {
+    $('head').append(`\n<link rel="alternate" hreflang="en-US" href="${SITE + path}">`);
+    $('head').append(`\n<link rel="alternate" hreflang="x-default" href="${SITE + path}">`);
+  }
 
   // 5. Structured data. This is what earns the rich result in Google — the
   //    star rating, the price range, the map pin. Without it she's just
@@ -204,6 +223,45 @@ for (const file of PAGES) {
     ],
     sameAs: ['https://www.instagram.com/susanatakesaphoto/'],
   });
+
+  ld.push({
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': SITE + path + '#webpage',
+    url: SITE + path,
+    name: pageTitle,
+    description: d || '',
+    inLanguage: 'en-US',
+    isPartOf: { '@id': SITE + '/#website' },
+    about: { '@id': SITE + '/#business' },
+    primaryImageOfPage: { '@type': 'ImageObject', url: socialImage },
+  });
+
+  if (file === 'index.html') {
+    ld.push({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      '@id': SITE + '/#website',
+      url: SITE + '/',
+      name: 'Susana Stethers Photography',
+      description: d || '',
+      inLanguage: 'en-US',
+      publisher: { '@id': SITE + '/#business' },
+    });
+  }
+
+  if (file === 'about.html') {
+    ld.push({
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      '@id': SITE + '/about#susana',
+      name: 'Susana Stethers',
+      jobTitle: 'Family, Newborn and Maternity Photographer',
+      url: SITE + '/about',
+      worksFor: { '@id': SITE + '/#business' },
+      sameAs: ['https://www.instagram.com/susanatakesaphoto/'],
+    });
+  }
 
   // Pricing page -> Offer markup, so Google can show the "$350" price.
   if (file === 'investment.html') {

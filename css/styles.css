@@ -353,6 +353,12 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: .015em
   text-transform: uppercase;
   color: var(--c-accent2);
 }
+.reviews-track { display:flex; gap:22px; overflow-x:auto; scroll-snap-type:x mandatory; padding:4px 4px 18px; scrollbar-width:thin; scrollbar-color:var(--c-l2) transparent; }
+.reviews-track .quote { flex:0 0 min(350px, 84vw); scroll-snap-align:start; min-height:255px; }
+.review-stars { color:#b79b67; font-size:13px; letter-spacing:.18em; }
+.review-excerpt { display:block; font-family:var(--serif); font-size:22px; line-height:1.35; color:var(--ink); margin-bottom:10px; }
+.reviews-source { margin:28px 0 0; text-align:center; font-size:11px; letter-spacing:.18em; text-transform:uppercase; }
+.reviews-source a { color:var(--c-accent2); border-bottom:1px solid var(--c-l2); padding-bottom:4px; }
 
 /* ----------------------------------------------------------- Instagram */
 .ig {
