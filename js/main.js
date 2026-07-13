@@ -68,9 +68,9 @@
     });
   }
   function startHero() {
-    if (heroSlides.length < 2 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (heroSlides.length < 2) return;
     clearInterval(heroTimer);
-    heroTimer = setInterval(function () { showHero((heroIndex + 1) % heroSlides.length); }, 6000);
+    heroTimer = setInterval(function () { showHero((heroIndex + 1) % heroSlides.length); }, 4500);
   }
   heroDots.forEach(function (dot, i) {
     dot.addEventListener('click', function () { showHero(i); startHero(); });
