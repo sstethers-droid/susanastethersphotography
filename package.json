@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "annotate": "node scripts/annotate.mjs",
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "audit:seo": "node scripts/audit-seo.mjs"
   },
   "dependencies": {
     "cheerio": "^1.0.0"
