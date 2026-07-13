@@ -627,6 +627,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: .015em
 .gallery-grid picture:nth-child(3n) { grid-row: span 3; }
 .gallery-grid picture:nth-child(5n) { grid-column: span 2; grid-row: span 2; }
 .gallery-grid picture:nth-child(7n) { grid-column: span 2; grid-row: span 3; }
+.gallery-grid picture.gallery-wide { grid-column: span 2; grid-row: span 2; }
 .gallery-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
 .gallery-grid picture:hover img { transform: scale(1.025); }
 .portfolio-cta { max-width: 700px; margin: 0 auto; padding: clamp(70px, 10vw, 120px) 24px; text-align: center; }
@@ -791,5 +792,6 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: .015em
   .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 118px; gap: 4px; }
   .gallery-grid picture:nth-child(3n) { grid-row: span 2; }
   .gallery-grid picture:nth-child(5n), .gallery-grid picture:nth-child(7n) { grid-column: span 2; grid-row: span 2; }
+  .gallery-grid picture.gallery-wide { grid-column: span 2; grid-row: span 3; }
   .experience-feature__copy, .experience-feature--reverse .experience-feature__copy { width: 92%; }
 }
