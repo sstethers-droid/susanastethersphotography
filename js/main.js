@@ -169,7 +169,8 @@
       name: name.value.trim(),
       email: email.value.trim(),
       session_type: session.value || null,
-      message: message.value.trim() || null
+      message: message.value.trim() || null,
+      website: honeypot ? honeypot.value : ''
     };
 
     submitBtn.disabled = true;
@@ -195,10 +196,8 @@
   });
 
   /**
-   * Post the inquiry to Supabase's auto-generated REST endpoint.
-   * No SDK needed — it's one fetch call, which keeps the page fast.
-   * If Supabase isn't configured yet, fall back to opening the visitor's
-   * email client so a real lead is never silently dropped.
+   * Send through a Supabase Edge Function so the inquiry is saved in the
+   * owner portal and an email notification is delivered in one request.
    */
   function send(payload) {
     if (!cfg.SUPABASE_URL || !cfg.SUPABASE_ANON_KEY) {
@@ -215,21 +214,21 @@
       return Promise.resolve();
     }
 
-    return fetch(cfg.SUPABASE_URL + '/rest/v1/inquiries', {
+    return fetch(cfg.SUPABASE_URL + '/functions/v1/contact-inquiry', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'apikey': cfg.SUPABASE_ANON_KEY,
-        'Authorization': 'Bearer ' + cfg.SUPABASE_ANON_KEY,
-        'Prefer': 'return=minimal'
+        'Authorization': 'Bearer ' + cfg.SUPABASE_ANON_KEY
       },
       body: JSON.stringify(payload)
     }).then(function (res) {
       if (!res.ok) {
         return res.text().then(function (t) {
-          throw new Error('Supabase responded ' + res.status + ': ' + t);
+          throw new Error('Contact service responded ' + res.status + ': ' + t);
         });
       }
+      return res.json();
     });
   }
 
