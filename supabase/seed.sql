@@ -183,9 +183,9 @@ insert into public.site_images (slot,label,section,alt) values ('portfolio-mothe
 insert into public.site_images (slot,label,section,alt) values ('portfolio-milestone-1','Portfolio Milestone 1','Portfolio','Mother cuddling her baby at home') on conflict (slot) do nothing;
 insert into public.site_images (slot,label,section,alt) values ('portfolio-milestone-2','Portfolio Milestone 2','Portfolio','Mother holding her young child in a flower field') on conflict (slot) do nothing;
 insert into public.site_images (slot,label,section,alt) values ('portfolio-milestone-3','Portfolio Milestone 3','Portfolio','Baby standing in a bright nursery crib') on conflict (slot) do nothing;
-insert into public.site_images (slot,label,section,alt) values ('pkg-family','Pkg Family','Investment','Family relaxing together in a spring garden') on conflict (slot) do nothing;
-insert into public.site_images (slot,label,section,alt) values ('pkg-maternity','Pkg Maternity','Investment','Expectant parents embracing outdoors') on conflict (slot) do nothing;
-insert into public.site_images (slot,label,section,alt) values ('pkg-newborn','Pkg Newborn','Investment','Close portrait of a sleeping newborn') on conflict (slot) do nothing;
+insert into public.site_images (slot,label,section,alt) values ('pkg-family','Pkg Family','Investment','Mother with her four children in a spring garden') on conflict (slot) do nothing;
+insert into public.site_images (slot,label,section,alt) values ('pkg-maternity','Pkg Maternity','Investment','Expectant parents with their daughter during a studio maternity session') on conflict (slot) do nothing;
+insert into public.site_images (slot,label,section,alt) values ('pkg-newborn','Pkg Newborn','Investment','Mother holding her newborn close during a lifestyle session') on conflict (slot) do nothing;
 insert into public.site_images (slot,label,section,alt) values ('contact','Contact','Contact','Mother cuddling her daughter in a floral studio setting') on conflict (slot) do nothing;
 insert into public.site_images (slot,label,section,alt) values ('portfolio-newborn-4','Portfolio Newborn 4','Portfolio','Parents holding their newborn together at home') on conflict (slot) do nothing;
 insert into public.site_images (slot,label,section,alt) values ('portfolio-newborn-5','Portfolio Newborn 5','Portfolio','Newborn in a soft blue outfit sleeping across a parent''s hands') on conflict (slot) do nothing;

@@ -502,7 +502,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: .015em
   border: 1px solid var(--c-l1);
   background: #fff;
 }
-.pkg__media { aspect-ratio: 3 / 2; overflow: hidden; }
+.pkg__media { aspect-ratio: 4 / 5; overflow: hidden; background: var(--c-bg); }
 .pkg__media img { width: 100%; height: 100%; object-fit: cover; }
 .pkg__body {
   padding: 36px 32px 40px;
