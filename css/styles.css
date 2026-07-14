@@ -653,6 +653,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: .015em
 }
 .gallery-grid picture.gallery-wide { column-span: all; display: block; }
 .gallery-grid img { display: block; width: 100%; height: auto; object-fit: contain; }
+.gallery-grid--single { max-width: 720px; columns: 1; }
 .portfolio-cta { max-width: 700px; margin: 0 auto; padding: clamp(70px, 10vw, 120px) 24px; text-align: center; }
 .portfolio-cta h2 { font-size: clamp(28px, 4vw, 38px); margin: 0 0 18px; }
 .portfolio-cta p:not(.eyebrow) { color: var(--body); margin: 0 0 28px; }
