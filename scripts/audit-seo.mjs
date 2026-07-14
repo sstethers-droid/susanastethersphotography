@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 import * as cheerio from 'cheerio';
 
 const root = resolve('dist');
-const pages = ['index.html', 'about.html', 'experience.html', 'portfolio.html', 'investment.html', 'contact.html'];
+const pages = ['index.html', 'about.html', 'experience.html', 'portfolio.html', 'portfolio-newborn.html', 'portfolio-family.html', 'portfolio-maternity.html', 'portfolio-milestones.html', 'investment.html', 'contact.html'];
 const expectedUrls = new Set(pages.map((page) => page === 'index.html' ? 'https://susanastethersphotography.com/' : `https://susanastethersphotography.com/${page.replace('.html', '')}`));
 const errors = [];
 const warnings = [];

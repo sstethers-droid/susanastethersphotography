@@ -26,7 +26,7 @@ const SUPABASE_URL = process.env.SUPABASE_URL || '';
 const SUPABASE_KEY = process.env.SUPABASE_ANON_KEY || '';
 const SITE = 'https://susanastethersphotography.com';
 
-const PAGES = ['index.html','about.html','experience.html','portfolio.html','investment.html','contact.html'];
+const PAGES = ['index.html','about.html','experience.html','portfolio.html','portfolio-newborn.html','portfolio-family.html','portfolio-maternity.html','portfolio-milestones.html','investment.html','contact.html'];
 const PASSTHROUGH = ['login.html','admin.html','css','js','images','robots.txt','favicon.ico'];
 
 const OUT = 'dist';
